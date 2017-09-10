@@ -4,7 +4,8 @@
 @using Don.PhonebookCore2.Web.Startup
 @model Abp.Application.Services.Dto.PagedResultDto<Don.PhonebookCore2.MultiTenancy.Dto.TenantDto>
 @{
-    ViewBag.CurrentPageName = PageNames.Tenants; //The menu item will be active for this page.
+   /* ViewBag.CurrentPageName = PageNames.Tenants; //The menu item will be active for this page.*/
+    ViewBag.CurrentPageName = PageNames.AdministrationNames.AdministrationTenants; //The menu item will be active for this page.
 }
 @section scripts
 {

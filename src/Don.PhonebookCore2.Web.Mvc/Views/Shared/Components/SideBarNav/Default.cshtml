@@ -22,7 +22,7 @@
     <ul class="list">
         @foreach (var menuItem in Model.MainMenu.Items)
         {
-            <li class="@(Model.ActiveMenuItemName == menuItem.Name ? "active" : "")">
+            <li class="@(Model.ActiveMenuItemNameFirst == menuItem.Name ? "active" : "")"> 
                 @if (menuItem.Items.IsNullOrEmpty())
                 {
                     <a href="@calculateMenuUrl(menuItem.Url)">
@@ -45,7 +45,7 @@
                     <ul class="ml-menu">
                         @foreach (var subMenuItem in menuItem.Items)
                         {
-                            <li class="@(Model.ActiveMenuItemName == subMenuItem.Name ? "active" : "")">
+                            <li class="@(Model.ActiveMenuItemNameSecond == subMenuItem.Name ? "active" : "")">
                                 @if (subMenuItem.Items.IsNullOrEmpty())
                                 {
                                     <a href="@calculateMenuUrl(subMenuItem.Url)">
@@ -68,7 +68,7 @@
                                     <ul class="ml-menu">
                                         @foreach (var subSubMenuItem in subMenuItem.Items)
                                         {
-                                            <li class="@(Model.ActiveMenuItemName == subSubMenuItem.Name ? "active" : "")">
+                                            <li class="@(Model.ActiveMenuItemNameSecond == subSubMenuItem.Name ? "active" : "")">
                                                 <a href="@calculateMenuUrl(subSubMenuItem.Url)">
                                                     @subSubMenuItem.DisplayName
                                                 </a>

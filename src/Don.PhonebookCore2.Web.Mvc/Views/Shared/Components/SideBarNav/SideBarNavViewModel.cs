@@ -6,6 +6,7 @@ namespace Don.PhonebookCore2.Web.Views.Shared.Components.SideBarNav
     {
         public UserMenu MainMenu { get; set; }
 
-        public string ActiveMenuItemName { get; set; }
+        public string ActiveMenuItemNameFirst { get; set; }
+        public string ActiveMenuItemNameSecond { get; set; }
     }
 }

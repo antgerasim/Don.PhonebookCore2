@@ -2,7 +2,10 @@
 @using Don.PhonebookCore2.Web.Startup
 @model Don.PhonebookCore2.Web.Models.Users.UserListViewModel
 @{
-    ViewBag.CurrentPageName = PageNames.Users; //The menu item will be active for this page.
+    var test = "test";
+    //ViewBag.CurrentPageName = PageNames.Users; //The menu item will be active for this page.
+    ViewBag.CurrentPageName = PageNames.AdministrationNames.AdministrationUsers; //The menu item will be active for this page.
+   /* UserController->View(Index.cshtml)->layout.cshtml->SidebrNavViewComponent-> default.cshtml*/
 }
 @section scripts
 {
