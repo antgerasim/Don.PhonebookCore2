@@ -20,14 +20,24 @@ namespace Don.PhonebookCore2.Web.Startup
                         icon: "home",
                         requiresAuthentication: true
                     )
-                ).AddItem( //Menu items below is just for demonstration!
+                )
+                .AddItem(
+                    new MenuItemDefinition(
+                        "PhoneBook",
+                        L("PhoneBook"),
+                        url: "PhoneBook",
+                        icon: "book"
+                    )
+                )
+                .AddItem( //Menu items below is just for demonstration!
                     new MenuItemDefinition(
                             "Administration",
                             L("Administration"),
                             icon: "build"
                         ).AddItem(
                             new MenuItemDefinition(
-                                PageNames.Tenants,
+                                //PageNames.Tenants,
+                                PageNames.AdministrationNames.AdministrationTenants.Split(".")[1],
                                 L("Tenants"),
                                 url: "Tenants",
                                 icon: "business",
@@ -35,7 +45,8 @@ namespace Don.PhonebookCore2.Web.Startup
                             )
                         ).AddItem(
                             new MenuItemDefinition(
-                                PageNames.Users,
+                                //PageNames.Users,
+                                PageNames.AdministrationNames.AdministrationUsers.Split(".")[1],
                                 L("Users"),
                                 url: "Users",
                                 icon: "people",
@@ -43,72 +54,66 @@ namespace Don.PhonebookCore2.Web.Startup
                             )
                         ).AddItem(
                             new MenuItemDefinition(
-                                PageNames.Roles,
+                                //PageNames.Roles,
+                                PageNames.AdministrationNames.AdministrationRoles.Split(".")[1],
                                 L("Roles"),
                                 url: "Roles",
                                 icon: "local_offer",
                                 requiredPermissionName: PermissionNames.Pages_Roles
                             )
                         )
-                        .AddItem(
-                            new MenuItemDefinition(
-                                PageNames.About,
-                                L("About"),
-                                url: "About",
-                                icon: "info"
-                            )
+                )
+                .AddItem(
+                    new MenuItemDefinition(
+                        PageNames.About,
+                        L("About"),
+                        url: "About",
+                        icon: "info"
+                    )
+                )
+                /*  multilevelMenuItems*/
+
+                .AddItem(
+                    new MenuItemDefinition(
+                        "AspNetZero",
+                        new FixedLocalizableString("ASP.NET Zero")
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            "AspNetZeroHome",
+                            new FixedLocalizableString("Home"),
+                            url: "https://aspnetzero.com?ref=abptmpl"
                         )
-                        /*  multilevelMenuItems*/
-                        .AddItem(
-                            new MenuItemDefinition(
-                                "PhoneBook",
-                                L("PhoneBook"),
-                                url: "PhoneBook",
-                                icon: "book"
-                            )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            "AspNetZeroDescription",
+                            new FixedLocalizableString("Description"),
+                            url: "https://aspnetzero.com/?ref=abptmpl#description"
                         )
-                        .AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZero",
-                                new FixedLocalizableString("ASP.NET Zero")
-                            ).AddItem(
-                                new MenuItemDefinition(
-                                    "AspNetZeroHome",
-                                    new FixedLocalizableString("Home"),
-                                    url: "https://aspnetzero.com?ref=abptmpl"
-                                )
-                            ).AddItem(
-                                new MenuItemDefinition(
-                                    "AspNetZeroDescription",
-                                    new FixedLocalizableString("Description"),
-                                    url: "https://aspnetzero.com/?ref=abptmpl#description"
-                                )
-                            ).AddItem(
-                                new MenuItemDefinition(
-                                    "AspNetZeroFeatures",
-                                    new FixedLocalizableString("Features"),
-                                    url: "https://aspnetzero.com/?ref=abptmpl#features"
-                                )
-                            ).AddItem(
-                                new MenuItemDefinition(
-                                    "AspNetZeroPricing",
-                                    new FixedLocalizableString("Pricing"),
-                                    url: "https://aspnetzero.com/?ref=abptmpl#pricing"
-                                )
-                            ).AddItem(
-                                new MenuItemDefinition(
-                                    "AspNetZeroFaq",
-                                    new FixedLocalizableString("Faq"),
-                                    url: "https://aspnetzero.com/Faq?ref=abptmpl"
-                                )
-                            ).AddItem(
-                                new MenuItemDefinition(
-                                    "AspNetZeroDocuments",
-                                    new FixedLocalizableString("Documents"),
-                                    url: "https://aspnetzero.com/Documents?ref=abptmpl"
-                                )
-                            )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            "AspNetZeroFeatures",
+                            new FixedLocalizableString("Features"),
+                            url: "https://aspnetzero.com/?ref=abptmpl#features"
                         )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            "AspNetZeroPricing",
+                            new FixedLocalizableString("Pricing"),
+                            url: "https://aspnetzero.com/?ref=abptmpl#pricing"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            "AspNetZeroFaq",
+                            new FixedLocalizableString("Faq"),
+                            url: "https://aspnetzero.com/Faq?ref=abptmpl"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            "AspNetZeroDocuments",
+                            new FixedLocalizableString("Documents"),
+                            url: "https://aspnetzero.com/Documents?ref=abptmpl"
+                        )
+                    )
                 );
         }
 

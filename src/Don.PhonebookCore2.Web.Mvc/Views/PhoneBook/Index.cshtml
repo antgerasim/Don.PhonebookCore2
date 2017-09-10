@@ -1,14 +1,47 @@
-﻿@model object
+﻿@using Don.PhonebookCore2.Web.Startup
+@model object
 
 @{
     ViewBag.Title = "title";
     Layout = "_Layout";
 /*    ViewBag.CurrentPageName = AppPageNames.Tenant.PhoneBook;*/
-        ViewBag.CurrentPageName = "PhoneBook";//todo create constant
+        ViewBag.CurrentPageName = PageNames.PhoneBook;//todo create constant
 }
 
 <h2>"PhoneBook"</h2>
 
+<div class="row m-b-5">
+    <div class="col-xs-12">
+        <div class="page-header">
+            <div class="title">    <h1>
+                <span>@L("PhoneBook")</span>
+            </h1></div>
+            <div class="panel-body"></div>
+        </div>
+    </div>
+</div>
+
+<div class="row m-b-5">
+    <div class="col-xs-12">
+        <div class="panel">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <h1>
+                        <span>@L("PhoneBook")</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="panel-body">
+                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@*
 <div class="well">
     Mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
 </div>
+*@
