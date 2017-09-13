@@ -4,6 +4,7 @@ using Abp.Dependency;
 using Abp.Domain.Uow;
 using Abp.EntityFrameworkCore.Uow;
 using Abp.MultiTenancy;
+using Don.PhonebookCore2.EntityFrameworkCore.Seed.Domain;
 using Don.PhonebookCore2.EntityFrameworkCore.Seed.Host;
 using Don.PhonebookCore2.EntityFrameworkCore.Seed.Tenants;
 using Microsoft.EntityFrameworkCore;
@@ -27,6 +28,9 @@ namespace Don.PhonebookCore2.EntityFrameworkCore.Seed
             //Default tenant seed (in host database).
             new DefaultTenantBuilder(context).Create();
             new TenantRoleAndUserBuilder(context, 1).Create();
+
+            //Default domain seed
+            new InitialDomainBuilder(context).Create();
         }
 
         private static void WithDbContext<TDbContext>(IIocResolver iocResolver, Action<TDbContext> contextAction)
