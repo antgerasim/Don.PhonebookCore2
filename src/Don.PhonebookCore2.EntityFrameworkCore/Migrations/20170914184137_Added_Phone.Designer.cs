@@ -16,9 +16,10 @@ using System;
 namespace Don.PhonebookCore2.Migrations
 {
     [DbContext(typeof(PhonebookCore2DbContext))]
-    partial class PhonebookCore2DbContextModelSnapshot : ModelSnapshot
+    [Migration("20170914184137_Added_Phone")]
+    partial class Added_Phone
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

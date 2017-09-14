@@ -1,6 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Abp.Domain.Entities.Auditing;
+using Don.PhonebookCore2.Domain.Phones;
 
 namespace Don.PhonebookCore2.Domain.Persons
 {
@@ -21,6 +23,8 @@ namespace Don.PhonebookCore2.Domain.Persons
 
         [MaxLength(MaxEmailAddressLength)]
         public virtual string EmailAddress { get; set; }
+
+        public virtual ICollection<Phone> Phones { get; set; }//Person aggregating Phones 
 
     }
 }

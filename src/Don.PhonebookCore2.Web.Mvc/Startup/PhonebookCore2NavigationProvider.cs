@@ -21,12 +21,14 @@ namespace Don.PhonebookCore2.Web.Startup
                         requiresAuthentication: true
                     )
                 )
+                //don added
                 .AddItem(
                     new MenuItemDefinition(
                         "PhoneBook",
                         L("PhoneBook"),
                         url: "PhoneBook",
-                        icon: "book"
+                        icon: "book",
+                        requiredPermissionName:PermissionNames.Pages_Tenant_PhoneBook
                     )
                 )
                 .AddItem( //Menu items below is just for demonstration!

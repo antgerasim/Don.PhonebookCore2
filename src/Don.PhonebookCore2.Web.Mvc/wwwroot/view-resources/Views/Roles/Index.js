@@ -1,52 +1,86 @@
-﻿(function() {
-    $(function() {
+﻿(function () {
+    $(function () {
 
-        var personService = abp.services.app.person;
-        var $modal = $("#PersonCreateModal");
-        var $form = $modal.find("form");
+        var _roleService = abp.services.app.role;
+        var _$modal = $('#RoleCreateModal');
+        var _$form = _$modal.find('form');
 
-        //Handle save button click
-        $form.closest("div.modal-content")
-            .find(".save-button")
-            .click(function(e) {
-                e.preventDefault();
-                save();
+        _$form.validate({
+        });
+
+        $('#RefreshButton').click(function () {
+            refreshRoleList();
+        });
+
+        $('.delete-role').click(function () {
+            var roleId = $(this).attr("data-role-id");
+            var roleName = $(this).attr('data-role-name');
+
+            deleteRole(roleId, roleName);
+        });
+
+        $('.edit-role').click(function (e) {
+            var roleId = $(this).attr("data-role-id");
+
+            e.preventDefault();
+            $.ajax({
+                url: abp.appPath + 'Roles/EditRoleModal?roleId=' + roleId,
+                type: 'POST',
+                contentType: 'application/html',
+                success: function (content) {
+                    $('#RoleEditModal div.modal-content').html(content);
+                },
+                error: function (e) { }
             });
+        });
 
+        _$form.find('button[type="submit"]').click(function (e) {
+            e.preventDefault();
 
-        $modal.on("shown.bs.modal",
-            function() {
-                $modal.find("input:not([type=hidden]):first").focus();
-            });
-
-        $("#RefreshButton")
-            .click(function() {
-                refreshUserList();
-            });
-
-        function refreshUserList() {
-            location.reload(true); //reload page to see new user!
-        }
-
-        function save() {
-            if (!$form.valid()) {
+            if (!_$form.valid()) {
                 return;
             }
 
-            var person = $form.serializeFormToObject();
-            abp.ui.setBusy($modal);
+            var role = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js
+            role.permissions = [];
+            var _$permissionCheckboxes = $("input[name='permission']:checked");
+            if (_$permissionCheckboxes) {
+                for (var permissionIndex = 0; permissionIndex < _$permissionCheckboxes.length; permissionIndex++) {
+                    var _$permissionCheckbox = $(_$permissionCheckboxes[permissionIndex]);
+                    role.permissions.push(_$permissionCheckbox.val());
+                }
+            }
 
-            personService.createPerson(person)
-                .done(function() {
-                    // $modal.modal.hide("hide");
-                    $modal.modal("hide");
-                    location.reload(true); //reload page to see new person!
-                })
-                .always(function() {
-                    abp.ui.clearBusy($modal);
-                });
+            abp.ui.setBusy(_$modal);
+            _roleService.create(role).done(function () {
+                _$modal.modal('hide');
+                location.reload(true); //reload page to see new role!
+            }).always(function () {
+                abp.ui.clearBusy(_$modal);
+            });
+        });
+
+        _$modal.on('shown.bs.modal', function () {
+            _$modal.find('input:not([type=hidden]):first').focus();
+        });
+
+        function refreshRoleList() {
+            location.reload(true); //reload page to see new role!
         }
 
-
+        function deleteRole(roleId, roleName) {
+            abp.message.confirm(
+                "Remove Users from Role and delete Role '" + roleName + "'?",
+                function (isConfirmed) {
+                    if (isConfirmed) {
+                        _roleService.delete({
+                            id: roleId
+                        }).done(function () {
+                            refreshRoleList();
+                        });
+                    }
+                }
+            );
+        }
     });
 })();

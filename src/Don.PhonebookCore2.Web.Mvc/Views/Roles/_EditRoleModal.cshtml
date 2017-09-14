@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        <div class="row clearfix">
+@*        <div class="row clearfix">
             <div class="col-sm-12">
                 <h4>Permissions</h4>
 
@@ -54,7 +54,24 @@
                     </div>
                 }
             </div>
+        </div>*@
+        
+        <div class="row clearfix">
+            <div class="col-sm-12">
+                <h4>Permissions</h4>
+
+                @for (var i = 0; i < Model.Permissions.Count; i++)
+                {
+                    var permission = Model.Permissions[i];
+                    <div class="col-sm-6">
+                        <input type="checkbox" name="permission" value="@permission.Name" class="filled-in" 
+                               id="@string.Format("permission{0}", permission.DisplayName)" @(Model.HasPermission(permission) ? "checked" : "") @(Model.Role.IsStatic ? "disabled" : "")/>
+                        <label for="@string.Format("permission{0}", permission.DisplayName)">@permission.DisplayName</label>
+                    </div>
+                }
+            </div>
         </div>
+
     </form>
 </div>
 
