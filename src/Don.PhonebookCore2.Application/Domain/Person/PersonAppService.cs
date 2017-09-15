@@ -71,7 +71,7 @@ namespace Don.PhonebookCore2.Domain.Person
              * We called it in the method since we need to save entity and get it's Id immediately*/
             await CurrentUnitOfWork.SaveChangesAsync();
             return ObjectMapper.Map<PhoneInPersonDto>(phone);
-            //weiter mit https://www.aspnetzero.com/Documents/Developing-Step-By-Step-Core/#view
+            //weiter mit https://www.aspnetzero.com/Documents/Developing-Step-By-Step-Core/#edit-mode-for-phone-numbers
         }
 
     }
