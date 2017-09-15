@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Don.PhonebookCore2.Domain.Persons;
-using Don.PhonebookCore2.Domain.Phone;
+using Don.PhonebookCore2.Domain.Phones;
+
 
 namespace Don.PhonebookCore2.EntityFrameworkCore.Seed.Domain
 {
