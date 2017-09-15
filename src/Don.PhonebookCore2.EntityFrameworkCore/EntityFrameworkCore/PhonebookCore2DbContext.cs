@@ -2,7 +2,7 @@
 using Don.PhonebookCore2.Authorization.Roles;
 using Don.PhonebookCore2.Authorization.Users;
 using Don.PhonebookCore2.Domain.Persons;
-using Don.PhonebookCore2.Domain.Phone;
+using Don.PhonebookCore2.Domain.Phones;
 using Don.PhonebookCore2.MultiTenancy;
 using Microsoft.EntityFrameworkCore;
 

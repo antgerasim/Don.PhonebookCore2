@@ -23001,3 +23001,49 @@ DEBUG 2017-09-14 21:41:36,062 [2    ] Abp.AutoMapper.AbpAutoMapperModule       -
 DEBUG 2017-09-14 21:41:36,062 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Domain.Person.Dto.PersonDto
 DEBUG 2017-09-14 21:41:36,062 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
 DEBUG 2017-09-14 21:41:36,063 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Web.Models.PhoneBook.IndexViewModel
+DEBUG 2017-09-15 11:19:53,855 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-09-15 11:19:54,070 [2    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-09-15 11:19:54,097 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Don.PhonebookCore2.Web.Startup.PhonebookCore2WebMvcModule, Don.PhonebookCore2.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 11:19:54,100 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Don.PhonebookCore2.PhonebookCore2WebCoreModule, Don.PhonebookCore2.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 11:19:54,100 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Don.PhonebookCore2.PhonebookCore2ApplicationModule, Don.PhonebookCore2.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 11:19:54,101 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Don.PhonebookCore2.PhonebookCore2CoreModule, Don.PhonebookCore2.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 11:19:54,101 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 11:19:54,101 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 11:19:54,101 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 11:19:54,102 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 11:19:54,102 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Don.PhonebookCore2.EntityFrameworkCore.PhonebookCore2EntityFrameworkModule, Don.PhonebookCore2.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 11:19:54,103 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 11:19:54,103 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 11:19:54,103 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 11:19:54,103 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 11:19:54,104 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 11:19:54,108 [2    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-09-15 11:19:54,194 [2    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-15 11:19:54,194 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-15 11:19:54,194 [2    ] o.Configuration.LanguageManagementConfig - Converted PhonebookCore2 (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-15 11:19:54,194 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-15 11:19:54,681 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Don.PhonebookCore2.EntityFrameworkCore.PhonebookCore2DbContext, Don.PhonebookCore2.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-15 11:19:56,006 [2    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-09-15 11:19:56,023 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-09-15 11:19:56,030 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-09-15 11:19:56,033 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: PhonebookCore2
+DEBUG 2017-09-15 11:19:56,035 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-09-15 11:19:56,253 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-09-15 11:19:56,324 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 17 classes define auto mapping attributes
+DEBUG 2017-09-15 11:19:56,324 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-09-15 11:19:56,328 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Users.Dto.CreateUserDto
+DEBUG 2017-09-15 11:19:56,329 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Users.Dto.UserDto
+DEBUG 2017-09-15 11:19:56,329 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-09-15 11:19:56,329 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-09-15 11:19:56,329 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Roles.Dto.CreateRoleDto
+DEBUG 2017-09-15 11:19:56,329 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Roles.Dto.PermissionDto
+DEBUG 2017-09-15 11:19:56,329 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Roles.Dto.RoleDto
+DEBUG 2017-09-15 11:19:56,329 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-09-15 11:19:56,329 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-09-15 11:19:56,329 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.MultiTenancy.Dto.TenantDto
+DEBUG 2017-09-15 11:19:56,329 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Domain.Person.AddPhoneInput
+DEBUG 2017-09-15 11:19:56,329 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Domain.Person.Dto.CreatePersonInput
+DEBUG 2017-09-15 11:19:56,329 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Domain.Person.Dto.PersonDto
+DEBUG 2017-09-15 11:19:56,329 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Domain.Person.Dto.PhoneInPersonDto
+DEBUG 2017-09-15 11:19:56,329 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2017-09-15 11:19:56,329 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Web.Models.PhoneBook.IndexViewModel
