@@ -5,6 +5,7 @@ using Don.PhonebookCore2.Domain.Persons;
 
 namespace Don.PhonebookCore2.Domain.Phones
 {
+    [Table("PbPhones")]
     public class Phone : CreationAuditedEntity<long>
     {
         public const int MaxNumberLength = 16;

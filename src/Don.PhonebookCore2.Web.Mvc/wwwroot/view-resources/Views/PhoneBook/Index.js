@@ -24,31 +24,33 @@
         });
 
     //handle remove button click
-    $('#AllPeopleList button.delete-person').click(function (e) {
-        e.preventDefault();
+    $('#AllPeopleList button.delete-person')
+        .click(function(e) {
+            e.preventDefault();
 
-        var $listItem = $(this).closest('.list-group-item');//closest - travels up the DOM tree and returns the first ancestor that matches the passed expression.
-        var personId = $listItem.attr('data-person-id');
+            var $listItem = $(this).closest('.list-group-item'); //closest - travels up the DOM tree and returns the first ancestor that matches the passed expression.
+            var personId = $listItem.attr('data-person-id');
 
 /*        abp.localization
             .localize("AreYouSureToDeleteThePerson", "PhonebookCore2");*/
 
-        abp.message.confirm(
-            abp.localization
-            .localize("AreYouSureToDeleteThePerson", "PhonebookCore2"),
-            function (isConfirmed) {
-                if (isConfirmed) {
-                    personService.deletePerson({
-                        id: personId
-                    }).done(function () {
-                        abp.notify.info(abp.localization
-                            .localize("SuccessfullyDeleted", "PhonebookCore2"));
-                        $listItem.remove();
-                    });
+            abp.message.confirm(
+                abp.localization
+                .localize("AreYouSureToDeleteThePerson", "PhonebookCore2"),
+                function(isConfirmed) {
+                    if (isConfirmed) {
+                        personService.deletePerson({
+                                id: personId
+                            })
+                            .done(function() {
+                                abp.notify.info(abp.localization
+                                    .localize("SuccessfullyDeleted", "PhonebookCore2"));
+                                $listItem.remove();
+                            });
+                    }
                 }
-            }
-        );
-    });
+            );
+        });
 
     $modal.on("shown.bs.modal",
         function() {
@@ -82,6 +84,54 @@
             });
     }
 
+
+    //Edit person button
+    $('#AllPeopleList button.edit-person')
+        .click(function(e) {
+            //e.preventDefault();
+
+            var $listItem = $(this).closest('.list-group-item');
+            $listItem.toggleClass('person-editing').siblings().removeClass('person-editing');
+            // $listItem.find('div').removeClass('table-phones-hidden').addClass('table-phones-shown');
+
+
+        });
+
+    //Save phone button
+    $('#AllPeopleList .button-save-phone')
+        .click(function(e) {
+            e.preventDefault();
+
+            var $phoneEditorRow = $(this).closest('tr');
+            $.ajax({
+                    url: abp.appPath + 'PhoneBook/AddPhone',
+                    dataType: 'html',
+                    data: JSON.stringify({
+                        personId: $phoneEditorRow.closest('.list-group-item').attr('data-person-id'),
+                        Type: $phoneEditorRow.find('select[name=Type]').val(),
+                        Number: $phoneEditorRow.find('input[name=Number]').val()
+                    })
+                })
+                .done(function(result) {
+                    $(result).insertBefore($phoneEditorRow);
+                });
+        });
+
+/*    $('.edit-role')
+        .click(function(e) {
+            var roleId = $(this).attr("data-role-id");
+
+            e.preventDefault();
+            $.ajax({
+                url: abp.appPath + 'Roles/EditRoleModal?roleId=' + roleId,
+                type: 'POST',
+                contentType: 'application/html',
+                success: function(content) {
+                    $('#RoleEditModal div.modal-content').html(content);
+                },
+                error: function(e) {}
+            });
+        });*/
 
 
     /*    function deleteUser(userId, userName) {

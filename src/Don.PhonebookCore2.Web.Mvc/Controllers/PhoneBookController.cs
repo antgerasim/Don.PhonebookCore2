@@ -6,6 +6,7 @@ using Don.PhonebookCore2.Authorization;
 using Don.PhonebookCore2.Controllers;
 using Don.PhonebookCore2.Domain.Person;
 using Don.PhonebookCore2.Domain.Person.Dto;
+using Don.PhonebookCore2.Domain.Phone;
 using Don.PhonebookCore2.Web.Models.PhoneBook;
 using Don.PhonebookCore2.Web.Models.Roles;
 using Microsoft.AspNetCore.Mvc;
@@ -39,6 +40,14 @@ namespace Don.PhonebookCore2.Web.Controllers
         {
             //return await Task.Run(() => View("_CreatePersonModal"));
             return View("_CreatePersonModal");
+        }
+        [HttpPost]
+        public async Task<PartialViewResult> AddPhone([FromBody] AddPhoneInput input)
+        {
+            PhoneInPersonDto phoneInPersonList = await _personAppService.AddPhone(input);
+            var model = new PhoneRowInPersonListViewModel(phoneInPersonList);
+
+            return PartialView("_PhoneRowInPersonList", model);
         }
     }
 }

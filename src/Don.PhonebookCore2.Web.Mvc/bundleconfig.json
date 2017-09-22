@@ -55,6 +55,7 @@
       "wwwroot/lib/animate.css/animate.css",
       "wwwroot/css/materialize.css",
       "wwwroot/css/style.css",
+      "wwwroot/css/don.css",
       "wwwroot/css/themes/all-themes.css",
       "wwwroot/view-resources/Views/Shared/_Layout.css"
     ]

@@ -9,6 +9,7 @@ using Abp.Linq.Extensions;
 using Castle.Core.Internal;
 using Don.PhonebookCore2.Authorization;
 using Don.PhonebookCore2.Domain.Person.Dto;
+using Don.PhonebookCore2.Domain.Phone;
 using Don.PhonebookCore2.Domain.Phones;
 using Microsoft.EntityFrameworkCore;
 
@@ -65,7 +66,7 @@ namespace Don.PhonebookCore2.Domain.Person
             var person = _personRepository.Get(input.PersonId);
             await _personRepository.EnsureCollectionLoadedAsync(person, p => p.Phones);
 
-            var phone = ObjectMapper.Map<Phone>(input);
+            var phone = ObjectMapper.Map<Phones.Phone>(input);
             person.Phones.Add(phone);
             /*(Notice that; normally it's not needed to call CurrentUnitOfWork.SaveChangesAsync. It's automatically called at the end of the method. 
              * We called it in the method since we need to save entity and get it's Id immediately*/

@@ -2,6 +2,7 @@
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using Don.PhonebookCore2.Domain.Person.Dto;
+using Don.PhonebookCore2.Domain.Phone;
 
 namespace Don.PhonebookCore2.Domain.Person
 {

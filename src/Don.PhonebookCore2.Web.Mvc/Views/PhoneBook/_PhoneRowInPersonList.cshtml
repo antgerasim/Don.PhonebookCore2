@@ -1,0 +1,10 @@
+﻿@model Don.PhonebookCore2.Web.Models.PhoneBook.PhoneRowInPersonListViewModel
+<tr data-phone-id="@Model.Phone.Id">
+    <td>
+        <button class="btn btn-sm waves-effect waves-circle waves-float button-delete-phone">
+            <i class="material-icons">delete</i>
+        </button>
+    </td>
+    <td>@Model.GetPhoneTypeAsString()</td>@*return localized phoneType*@
+    <td>@Model.Phone.Number</td>
+</tr>

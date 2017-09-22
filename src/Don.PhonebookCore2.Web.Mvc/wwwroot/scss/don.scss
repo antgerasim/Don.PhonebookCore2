@@ -1,0 +1,24 @@
+﻿#AllPeopleList {
+    .list-group-item-heading {
+        span.person-buttons {
+            float: right;
+        }
+    }
+
+    .table-phones {
+        display: none;
+    }
+
+    .person-editing {
+        /*background-color: #ccffcc;*/
+        background-color: red;
+
+        h4 {
+            font-weight: bold;
+        }
+
+        .table-phones {
+            display: table;
+        }
+    }
+}

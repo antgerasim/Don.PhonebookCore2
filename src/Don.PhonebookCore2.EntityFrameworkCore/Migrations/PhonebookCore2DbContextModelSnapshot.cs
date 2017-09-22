@@ -2,7 +2,7 @@
 using Abp.Authorization;
 using Abp.BackgroundJobs;
 using Abp.Notifications;
-//using Don.PhonebookCore2.Domain.Phone;
+using Don.PhonebookCore2.Domain.Phones;
 using Don.PhonebookCore2.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
@@ -916,7 +916,7 @@ namespace Don.PhonebookCore2.Migrations
                     b.ToTable("PbPersons");
                 });
 
-            modelBuilder.Entity("Don.PhonebookCore2.Domain.Phone.Phone", b =>
+            modelBuilder.Entity("Don.PhonebookCore2.Domain.Phones.Phone", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd();
@@ -937,7 +937,7 @@ namespace Don.PhonebookCore2.Migrations
 
                     b.HasIndex("PersonId");
 
-                    b.ToTable("Phones");
+                    b.ToTable("PbPhones");
                 });
 
             modelBuilder.Entity("Don.PhonebookCore2.MultiTenancy.Tenant", b =>
@@ -1125,7 +1125,7 @@ namespace Don.PhonebookCore2.Migrations
                         .HasForeignKey("LastModifierUserId");
                 });
 
-            modelBuilder.Entity("Don.PhonebookCore2.Domain.Phone.Phone", b =>
+            modelBuilder.Entity("Don.PhonebookCore2.Domain.Phones.Phone", b =>
                 {
                     b.HasOne("Don.PhonebookCore2.Domain.Persons.Person", "Person")
                         .WithMany("Phones")

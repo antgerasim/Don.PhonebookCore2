@@ -14,5 +14,9 @@
   {
     "outputFile": "wwwroot/view-resources/Views/Shared/_Layout.css",
     "inputFile": "wwwroot/view-resources/Views/Shared/_Layout.less"
+  },
+  {
+    "outputFile": "wwwroot/scss/don.css",
+    "inputFile": "wwwroot/scss/don.scss"
   }
 ]
