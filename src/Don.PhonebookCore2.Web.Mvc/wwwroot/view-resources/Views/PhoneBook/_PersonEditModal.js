@@ -12,7 +12,7 @@
     $form.closest("div.modal-content")
         .find(".save-button")
         .click(function (e) {
-            debugger;
+           // debugger;
             e.preventDefault();
             save();
         });
@@ -28,8 +28,8 @@
         var person = $form.serializeFormToObject(); //serializeFormToObject is defined in main.js
   
         abp.ui.setBusy($form);
-        personService.update(person).done(function () {
-            debugger;
+        personService.editPerson(person).done(function () {
+            //debugger;
             $modal.modal('hide');
             location.reload(true); //reload page to see edited role!
         }).always(function () {

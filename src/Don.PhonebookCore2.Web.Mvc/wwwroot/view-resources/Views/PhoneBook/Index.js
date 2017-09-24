@@ -24,17 +24,14 @@
         });
 
     //handle remove button click
-    $('#AllPeopleList button.delete-person')
+    $("#AllPeopleList button.delete-person")
         .click(function(e) {
             e.preventDefault();
 
             var $listItem =
                 $(this).closest(
-                    '.list-group-item'); //closest - travels up the DOM tree and returns the first ancestor that matches the passed expression.
-            var personId = $listItem.attr('data-person-id');
-
-/*        abp.localization
-            .localize("AreYouSureToDeleteThePerson", "PhonebookCore2");*/
+                    ".list-group-item"); //closest - travels up the DOM tree and returns the first ancestor that matches the passed expression.
+            var personId = $listItem.attr("data-person-id");
 
             abp.message.confirm(
                 abp.localization
@@ -55,8 +52,8 @@
         });
 
     $modal.on("shown.bs.modal",
-        function () {
-            $modal.find('input:not([type=hidden]):first').focus();
+        function() {
+            $modal.find("input:not([type=hidden]):first").focus();
 
         });
 
@@ -80,7 +77,7 @@
         personService.createPerson(person)
             .done(function() {
                 // $modal.modal.hide("hide");
-                $modal.modal('hide');
+                $modal.modal("hide");
                 location.reload(true); //reload page to see new person!
             })
             .always(function() {
@@ -88,32 +85,21 @@
             });
     }
 
-    //Edit person button
-    $('#AllPeopleList button.edit-person')
-        .click(function(e) {
-            //e.preventDefault();
-
-            var $listItem = $(this).closest('.list-group-item');
-            $listItem.toggleClass('person-editing').siblings().removeClass('person-editing');
-            // $listItem.find('div').removeClass('table-phones-hidden').addClass('table-phones-shown');
-
-        });
-
     //Save phone button
-    $('#AllPeopleList .button-save-phone')
+    $("#AllPeopleList .button-save-phone")
         .click(function(e) {
             e.preventDefault();
 
-            var $phoneEditorRow = $(this).closest('tr');
-            var personId = parseInt($phoneEditorRow.closest('.list-group-item').attr('data-person-id'), 10);
-            var type = parseInt($phoneEditorRow.find('select[name=Type]').val(), 10);
-            var number = $phoneEditorRow.find('input[name=Number]').val();
+            var $phoneEditorRow = $(this).closest("tr");
+            var personId = parseInt($phoneEditorRow.closest(".list-group-item").attr("data-person-id"), 10);
+            var type = parseInt($phoneEditorRow.find("select[name=Type]").val(), 10);
+            var number = $phoneEditorRow.find("input[name=Number]").val();
 
             abp.ajax({
-                    url: abp.appPath + 'PhoneBook/AddPhone',
-                    type: 'POST',
-                    dataType: 'html', //type of data expecting back from server 
-                    contentType: 'application/x-www-form-urlencoded',//since request to controller (not web proxy service)
+                    url: abp.appPath + "PhoneBook/AddPhone",
+                    type: "POST",
+                    dataType: "html", //type of data expecting back from server 
+                    contentType: "application/x-www-form-urlencoded", //since request to controller (not web proxy service)
                     //contentType: 'application/json', 
 /*                    data: JSON.stringify({
                         personId: personId,
@@ -132,82 +118,41 @@
         });
 
     //Delete phone button
-    $('#AllPeopleList').on('click', '.button-delete-phone', function(e) {
+    $("#AllPeopleList").on("click", ".button-delete-phone", function(e) {
         e.preventDefault();
 
-        var $phoneRow = $(this).closest('tr');
-        var phoneId = $phoneRow.attr('data-phone-id');
+        var $phoneRow = $(this).closest("tr");
+        var phoneId = $phoneRow.attr("data-phone-id");
 
         personService.deletePhone({
                 id: phoneId
             })
             .done(function() {
-                abp.notify.success(abp.localization.localize('SuccessfullyDeleted', 'PhonebookCore2'));
+                abp.notify.success(abp.localization.localize("SuccessfullyDeleted", "PhonebookCore2"));
                 $phoneRow.remove();
             });
     });
 
-/*    $('#AllPeopleList button.edit-person').click(function (e) {
+    //Edit person button
+    $("#AllPeopleList button.edit-person").click(function(e) {
         e.preventDefault();
-        var $listItem = $(this).closest('.list-group-item');
-        var id = $listItem.data('person-id');
-
-
-        //_editPersonModal.open({ id: id });
-    });*/
-
-    $('#AllPeopleList button.edit-person').click(function (e) {
-        e.preventDefault();
-        var $listItem =
-            $(this).closest(
-                '.list-group-item');
+        e.stopPropagation();//prevents boostrap collapse from collapsing on click
+        var $listItem = $(this).closest(".list-group-item");
+        $listItem.toggleClass("person-editing").siblings().removeClass("person-editing");
 
         var personId = $listItem.attr("data-person-id");
 
         $.ajax({
-            url: abp.appPath + 'PhoneBook/EditPersonModal?personId=' + personId,
-            type: 'POST',
-            contentType: 'application/html',
-            success: function (content) {
-                $('#PersonEditModal div.modal-content').html(content);
+            url: abp.appPath + "PhoneBook/EditPersonModal?personId=" + personId,
+            type: "POST",
+            contentType: "application/html",
+            success: function(content) {
+                $("#PersonEditModal div.modal-content").html(content);
+                $('.personEditModal').modal('show');
             },
-            error: function (e) { }
+            error: function(e) {}
         });
     });
 
 
-
-
-
-
-/*    $('.edit-role')
-        .click(function(e) {
-            var roleId = $(this).attr("data-role-id");
-
-            e.preventDefault();
-            $.ajax({
-                url: abp.appPath + 'Roles/EditRoleModal?roleId=' + roleId,
-                type: 'POST',
-                contentType: 'application/html',
-                success: function(content) {
-                    $('#RoleEditModal div.modal-content').html(content);
-                },
-                error: function(e) {}
-            });
-        });*/
-
-    /*    function deleteUser(userId, userName) {
-        abp.message.confirm(
-            "Delete user '" + userName + "'?",
-            function (isConfirmed) {
-                if (isConfirmed) {
-                    _userService.delete({
-                        id: userId
-                    }).done(function () {
-                        refreshUserList();
-                    });
-                }
-            }
-        );
-    }*/
 })(jQuery);

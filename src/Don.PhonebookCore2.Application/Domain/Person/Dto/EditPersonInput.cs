@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Abp.Application.Services.Dto;
 
-namespace Don.PhonebookCore2.Domain.Person
+namespace Don.PhonebookCore2.Domain.Person.Dto
 {
     public class EditPersonInput : IEntityDto
     {

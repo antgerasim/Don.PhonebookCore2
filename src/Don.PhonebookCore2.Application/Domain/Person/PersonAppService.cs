@@ -90,18 +90,6 @@ namespace Don.PhonebookCore2.Domain.Person
             await _personRepository.UpdateAsync(person);
         }
 
-        public  async Task Update(PersonDto input)
-        {
-            //check updatePermission
-            var person =  _personRepository.Get(input.Id);
-            await _personRepository.EnsureCollectionLoadedAsync(person, p => p.Phones);
-            person.Name = input.Name;
-            person.Surname = input.Surname;
-            person.EmailAddress = input.EmailAddress;
 
-            await _personRepository.UpdateAsync(person);
-      
-          
-        }
     }
 }
