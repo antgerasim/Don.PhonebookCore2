@@ -15,7 +15,7 @@ namespace Don.PhonebookCore2.Domain.Person
 
         Task DeletePhone(EntityDto<long> input);
         Task<PhoneInPersonDto> AddPhone(AddPhoneInput input);
-        Task<GetPersonForEditOutput> GetPersonForEdit(IEntityDto input);
+        Task<PersonDto> GetPersonForEdit(IEntityDto input);
         Task EditPerson(EditPersonInput input);
     }
 }

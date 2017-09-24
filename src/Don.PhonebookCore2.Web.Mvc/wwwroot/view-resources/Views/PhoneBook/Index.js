@@ -55,7 +55,9 @@
         });
 
     $modal.on("shown.bs.modal",
-        function() {
+        function () {
+            $modal.find('input:not([type=hidden]):first').focus();
+
         });
 
     $("#RefreshButton")
@@ -145,13 +147,32 @@
             });
     });
 
-    $('#AllPeopleList button.edit-person').click(function (e) {
+/*    $('#AllPeopleList button.edit-person').click(function (e) {
         e.preventDefault();
         var $listItem = $(this).closest('.list-group-item');
         var id = $listItem.data('person-id');
 
 
         //_editPersonModal.open({ id: id });
+    });*/
+
+    $('#AllPeopleList button.edit-person').click(function (e) {
+        e.preventDefault();
+        var $listItem =
+            $(this).closest(
+                '.list-group-item');
+
+        var personId = $listItem.attr("data-person-id");
+
+        $.ajax({
+            url: abp.appPath + 'PhoneBook/EditPersonModal?personId=' + personId,
+            type: 'POST',
+            contentType: 'application/html',
+            success: function (content) {
+                $('#PersonEditModal div.modal-content').html(content);
+            },
+            error: function (e) { }
+        });
     });
 
 

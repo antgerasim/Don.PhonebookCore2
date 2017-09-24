@@ -47,114 +47,100 @@
                     <div class="body">
                         <form action="@Url.Action("Index")" method="get">
                             <div class="input-group">
-                                <input id="FilterPeopleText" name="Filter" value="@Model.Filter" class="form-control" style="width: 99%" placeholder="@L("SearchWithThreeDot")" type="text">
+                                <input id="FilterPeopleText" name="Filter" value="@Model.Filter" class="form-control" style="border: 1px solid #ddd; width: 99%;" placeholder="@L("SearchWithThreeDot")" type="text">
                                 <span class="input-group-btn">
-                                    <button id="FilterPeopleButton" class="btn btn-default waves-effect waves-circle waves-float" type="submit">
+                                    <button id="FilterPoepleButton" class="btn btn-default waves-effect waves-circle waves-float" type="submit">
                                         <i class="material-icons">search</i>
                                     </button>
                                 </span>
                             </div>
                         </form>
 
-                        <div name="groupItemSample">
-                            <div id="menu">
-                                <div class="panel list-group"> @*panel class is crucial for accordion to work!!*@
+                        <div id="accordion">
+                            <div class="panel list-group">
+                                @*panel class is crucial for accordion to work!!*@
 
-                                    @foreach (var person in Model.Items)
-                                    {
-                                        <a href="#" class="list-group-item" data-toggle="collapse" data-target="@string.Format("#collapseTable{0}", person.Id)" data-parent="#menu">
-                                            <h4 class="list-group-item-heading">
-                                                @person.Name @person.Surname
-                                                <span class="person-buttons">
-                                                    @if (IsGranted(PermissionNames.Pages_Tenant_PhoneBook_CreatePerson))
-                                                    {
-                                                        <button title="@L("Delete")" class="btn bg-red btn-circle waves-effect waves-circle waves-float delete-person pull-right">
-                                                            <i class="material-icons">delete</i>
-                                                        </button>
-                                                    }
-                                                    <button title="@L("Edit")" class="btn bg-teal btn-circle waves-effect waves-circle waves-float edit-person m-r-5 pull-right" type="button">
-                                                        <i class="material-icons">create</i>
-                                                    </button>
-                                                </span>
-                                            </h4>
-                                            <p class="list-group-item-text">
-                                                @person.EmailAddress
-                                            </p>
-                                        </a>/*end group-item-heading*/
-                                 
-
-                                        /*start collapsed content*/
-                                        <div id="@string.Format("collapseTable{0}", person.Id)" class="collapse">
-                                           @* <a class="list-group-item small">ficken</a>*@
-                                            <table class="table table-hover">
-                                                <thead>
-                                                <tr>
-                                                    <th style="width: 10%"></th>
-                                                    <th style="width: 15%">@L("Type")</th>
-                                                    <th style="width: 75%">@L("PhoneNumber")</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                @foreach (var phone in person.Phones)
+                                @foreach (var person in Model.Items)
+                                {
+                                    <a href="javascript:;" class="list-group-item" data-person-id="@person.Id" data-toggle="collapse" data-target="@string.Format("#collapseTable{0}", person.Id)" data-parent="#accordion">
+                                        <h4 class="list-group-item-heading">
+                                            @person.Name @person.Surname
+                                            <span class="person-buttons">
+                                                @if (IsGranted(PermissionNames.Pages_Tenant_PhoneBook_CreatePerson))
                                                 {
-                                                    @Html.Partial("_PhoneRowInPersonList", new PhoneRowInPersonListViewModel(phone))
+                                                    <button title="@L("Delete")" class="btn bg-red btn-circle waves-effect waves-circle waves-float delete-person pull-right">
+                                                        <i class="material-icons">delete</i>
+                                                    </button>
                                                 }
-                                                <tr>
-                                                    <td>
-                                                        <button class="btn btn-sm bg-teal waves-effect waves-circle waves-float button-save-phone">
-                                                            <i class="material-icons">save</i>
-                                                        </button>
-                                                    </td>
-                                                    <td>
-                                                        <select name="Type">
-                                                            <option value="0">@L("PhoneType_Mobile")</option>
-                                                            <option value="1">@L("PhoneType_Home")</option>
-                                                            <option value="2">@L("PhoneType_Business")</option>
-                                                        </select>
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" name="Number" />
-                                                    </td>
-                                                </tr>
-                                                </tbody>
 
-                                            </table>
-                                            
+                                                <button title="@L("Edit")" class="btn bg-teal btn-circle waves-effect waves-circle waves-float edit-person m-r-5 pull-right" type="button" data-toggle="modal" data-target="#PersonEditModal">
+                                                    <i class="material-icons">create</i>
+                                                </button>
+                                            </span>
+                                        </h4>
+                                        <p class="list-group-item-text">
+                                            @person.EmailAddress
+                                        </p>
+                                    </a> /*end group-item-heading*/
+                                    /*start collapsed content*/
+                                    <div id="@string.Format("collapseTable{0}", person.Id)" class="collapse">
 
-                                        </div>    
-                                    }
+                                        <table class="table table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th style="width: 10%"></th>
+                                                <th style="width: 15%">@L("Type")</th>
+                                                <th style="width: 75%">@L("PhoneNumber")</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            @foreach (var phone in person.Phones)
+                                            {
+                                                @Html.Partial("_PhoneRowInPersonList", new PhoneRowInPersonListViewModel(phone))
+                                            }
+                                            <tr>
+                                                <td>
+                                                    <button class="btn btn-sm bg-teal waves-effect waves-circle waves-float button-save-phone">
+                                                        <i class="material-icons">save</i>
+                                                    </button>
+                                                </td>
+                                                <td>
+                                                    <select name="Type">
+                                                        <option value="0">@L("PhoneType_Mobile")</option>
+                                                        <option value="1">@L("PhoneType_Home")</option>
+                                                        <option value="2">@L("PhoneType_Business")</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="Number"/>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+
+                                        </table>
 
 
-                                    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sm" data-parent="#menu">
-                                        MESSAGES <span class="label label-info">5</span> 
-                                        <span class="glyphicon glyphicon-envelope pull-right"></span>
-                                    </a>
-                                    <div id="sm" class="sublinks collapse">
-                                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> inbox</a>
-                                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> sent</a>
                                     </div>
-                                    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl" data-parent="#menu">TASKS <span class="glyphicon glyphicon-tag pull-right"></span></a>
-                                    <div id="sl" class="sublinks collapse">
-                                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> saved tasks</a>
-                                        <a class="list-group-item small"><span class="glyphicon glyphicon-chevron-right"></span> add new task</a>
-                                    </div>
-                                    <a href="#" class="list-group-item">ANOTHER LINK ...<span class="glyphicon glyphicon-stats pull-right"></span></a>
-                                </div>
+                                }
+
                             </div>
                         </div>
-
-
                     </div>
                 </div>
-
             </div>
         </div>
-
     </div>
-
 </div>
 
-<div class="modal fade" id="PersonCreateModal" tabindex="-1" role="dialog" aria-labelledby="RoleCreateModalLabel" data-backdrop="static">
+<div class="modal fade" id="PersonEditModal" tabindex="-1" role="dialog" aria-labelledby="RoleEditModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="PersonCreateModal" tabindex="-1" role="dialog" aria-labelledby="PersonCreateModalLabel" data-backdrop="static">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             @Html.Partial("Modals/_ModalHeader", new ModalHeaderViewModel(L("CreateNewPerson")))
@@ -197,3 +183,45 @@
         </div>
     </div>
 </div>
+
+@*<div class="modal fade" id="PersonEditModal" tabindex="-1" role="dialog" aria-labelledby="PersonEditModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            @Html.Partial("Modals/_ModalHeader", new ModalHeaderViewModel("Edit Person"))
+            <div class="modal-body">
+                <form role="form" novalidate class="form-validation">
+                    <input type="hidden" name="Id" value="@Model.Id" />
+                    <div class="row clearfix">
+                        <div class="col-sm-12">
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input class="form-control" type="text" name="Name" value="@Model.Name" required maxlength="@Person.MaxNameLength" />
+                                    <label class="form-label">@L("Name")</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input class="form-control" type="text" name="Surname" value="@Model.Surname" required maxlength="@Person.MaxSurnameLength" />
+                                    <label class="form-label">@L("Surname")</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group form-float">
+                                <div class="form-line">
+                                    <input class="form-control" type="email" name="EmailAddress" value="@Model.EmailAddress" required maxlength="@Person.MaxEmailAddressLength" />
+                                    <label class="form-label">@L("EmailAddress")</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @Html.Partial("Modals/_ModalFooterWithSaveAndCancel")
+                </form>
+            </div>
+        
+
+        </div>
+    </div>
+</div>*@

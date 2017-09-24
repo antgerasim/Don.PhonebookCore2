@@ -1,15 +1,12 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.AspNetCore.Mvc.Authorization;
-using Abp.Runtime.Validation;
-using Abp.Threading;
 using Don.PhonebookCore2.Authorization;
 using Don.PhonebookCore2.Controllers;
 using Don.PhonebookCore2.Domain.Person;
 using Don.PhonebookCore2.Domain.Person.Dto;
 using Don.PhonebookCore2.Domain.Phone;
 using Don.PhonebookCore2.Web.Models.PhoneBook;
-using Don.PhonebookCore2.Web.Models.Roles;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Don.PhonebookCore2.Web.Controllers
@@ -45,23 +42,26 @@ namespace Don.PhonebookCore2.Web.Controllers
 
         //[DisableValidation]
         [HttpPost]
-        public async Task<PartialViewResult>
-            AddPhone(
-                [FromForm]
-                AddPhoneInput input) //[FromBody] == contentType: 'application/json', [FromForm] ==contentType: 'application/x-www-form-urlencoded'
+        public async Task<PartialViewResult> AddPhone([FromForm] AddPhoneInput input)
         {
-            PhoneInPersonDto phoneInPersonList = await _personAppService.AddPhone(input);
+            //[FromBody] == contentType: 'application/json', 
+            //[FromForm] ==contentType: 'application/x-www-form-urlencoded'
+            var phoneInPersonList = await _personAppService.AddPhone(input);
             var model = new PhoneRowInPersonListViewModel(phoneInPersonList);
 
             return PartialView("_PhoneRowInPersonList", model);
         }
 
-        public async Task<PartialViewResult> EditPersonModal(int id)
+        public async Task<ActionResult> EditPersonModal(int personId)
         {
-            var output = await _personAppService.GetPersonForEdit(new EntityDto {Id = id});
-            var viewModel = new EditPersonViewModel(output);
+            var person = await _personAppService.GetPersonForEdit(new EntityDto {Id = personId});
+            var viewModel = new EditPersonViewModel
+            {
+                Person = person
+            };
 
-            return PartialView("_EditPersonModal", viewModel);
+            //return PartialView("_EditPersonModal", viewModel);//todo experimnet with PartialViews
+            return View("_EditPersonModal", viewModel);
         }
     }
 }

@@ -1,23 +1,19 @@
+using System.Collections.Generic;
+using Abp.AutoMapper;
 using Don.PhonebookCore2.Domain.Person.Dto;
+using Don.PhonebookCore2.Domain.Phone;
 
 namespace Don.PhonebookCore2.Web.Models.PhoneBook
 {
+   
     public class EditPersonViewModel
     {
-        public int Id { get; set; }
+
+        public PersonDto Person { get; set; }
+
+        public IReadOnlyList<PhoneInPersonDto> Phones { get; set; }
+
+
   
-        public string Name { get; set; }
-
-        public string Surname { get; set; }
-
-        public string EmailAddress { get; set; }
-
-        public EditPersonViewModel(GetPersonForEditOutput personForEdit)
-        {
-            Id = personForEdit.Id;
-            Name = personForEdit.Name;
-            Surname = personForEdit.Surname;
-            EmailAddress = personForEdit.EmailAddress;
-        }
     }
 }

@@ -75,10 +75,10 @@ namespace Don.PhonebookCore2.Domain.Person
             //weiter mit https://www.aspnetzero.com/Documents/Developing-Step-By-Step-Core/#edit-mode-for-phone-numbers
         }
 
-        public async Task<GetPersonForEditOutput> GetPersonForEdit(IEntityDto input)
+        public async Task<PersonDto> GetPersonForEdit(IEntityDto input)
         {
             var person = await _personRepository.GetAsync(input.Id);
-            return ObjectMapper.Map<GetPersonForEditOutput>(person);
+            return ObjectMapper.Map<PersonDto>(person);
         }
 
         public async Task EditPerson(EditPersonInput input)
@@ -88,6 +88,20 @@ namespace Don.PhonebookCore2.Domain.Person
             person.Surname = input.Surname;
             person.EmailAddress = input.EmailAddress;
             await _personRepository.UpdateAsync(person);
+        }
+
+        public  async Task Update(PersonDto input)
+        {
+            //check updatePermission
+            var person =  _personRepository.Get(input.Id);
+            await _personRepository.EnsureCollectionLoadedAsync(person, p => p.Phones);
+            person.Name = input.Name;
+            person.Surname = input.Surname;
+            person.EmailAddress = input.EmailAddress;
+
+            await _personRepository.UpdateAsync(person);
+      
+          
         }
     }
 }
