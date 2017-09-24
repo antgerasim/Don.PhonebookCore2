@@ -27,6 +27,7 @@
     $("#AllPeopleList button.delete-person")
         .click(function(e) {
             e.preventDefault();
+            e.stopPropagation();//prevents boostrap collapse from collapsing on click
 
             var $listItem =
                 $(this).closest(

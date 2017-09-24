@@ -55,11 +55,8 @@ namespace Don.PhonebookCore2.Web.Controllers
         public async Task<ActionResult> EditPersonModal(int personId)
         {
             var person = await _personAppService.GetPersonForEdit(new EntityDto {Id = personId});
-            var viewModel = new EditPersonViewModel
-            {
-                Person = person
-            };
-
+            var viewModel = new EditPersonModalViewModel(person);
+       
             //return PartialView("_EditPersonModal", viewModel);//todo experimnet with PartialViews
             return View("_EditPersonModal", viewModel);
         }

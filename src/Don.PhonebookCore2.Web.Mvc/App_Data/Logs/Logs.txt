@@ -5150,3 +5150,1165 @@ INFO  2017-09-24 22:54:34,407 [90   ] soft.AspNetCore.Hosting.Internal.WebHost -
 INFO  2017-09-24 22:54:34,414 [90   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/PhoneBook/_PersonEditModal.js?v=St_DTOj36Kt_PfEGmrbZ5MjK_pyQTCgaJj1VHLvoRCs&_=1506282610167  
 INFO  2017-09-24 22:54:34,418 [90   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/PhoneBook/_PersonEditModal.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\PhoneBook\_PersonEditModal.js'
 INFO  2017-09-24 22:54:34,424 [99   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.2798ms 200 application/javascript
+DEBUG 2017-09-24 23:04:03,299 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-09-24 23:04:03,425 [2    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-09-24 23:04:03,450 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Don.PhonebookCore2.Web.Startup.PhonebookCore2WebMvcModule, Don.PhonebookCore2.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-24 23:04:03,455 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Don.PhonebookCore2.PhonebookCore2WebCoreModule, Don.PhonebookCore2.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-24 23:04:03,456 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Don.PhonebookCore2.PhonebookCore2ApplicationModule, Don.PhonebookCore2.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-24 23:04:03,456 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Don.PhonebookCore2.PhonebookCore2CoreModule, Don.PhonebookCore2.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-24 23:04:03,456 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-24 23:04:03,457 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-24 23:04:03,457 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-24 23:04:03,458 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-24 23:04:03,459 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Don.PhonebookCore2.EntityFrameworkCore.PhonebookCore2EntityFrameworkModule, Don.PhonebookCore2.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-24 23:04:03,459 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-24 23:04:03,459 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-24 23:04:03,460 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-24 23:04:03,460 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-24 23:04:03,460 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-24 23:04:03,466 [2    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-09-24 23:04:03,584 [2    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-24 23:04:03,584 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-24 23:04:03,584 [2    ] o.Configuration.LanguageManagementConfig - Converted PhonebookCore2 (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-24 23:04:03,584 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-09-24 23:04:04,028 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Don.PhonebookCore2.EntityFrameworkCore.PhonebookCore2DbContext, Don.PhonebookCore2.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-09-24 23:04:05,212 [2    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-09-24 23:04:05,227 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-09-24 23:04:05,234 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-09-24 23:04:05,237 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: PhonebookCore2
+DEBUG 2017-09-24 23:04:05,239 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-09-24 23:04:05,473 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-09-24 23:04:05,547 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 18 classes define auto mapping attributes
+DEBUG 2017-09-24 23:04:05,547 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-09-24 23:04:05,552 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Users.Dto.CreateUserDto
+DEBUG 2017-09-24 23:04:05,552 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Users.Dto.UserDto
+DEBUG 2017-09-24 23:04:05,553 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-09-24 23:04:05,553 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-09-24 23:04:05,553 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Roles.Dto.CreateRoleDto
+DEBUG 2017-09-24 23:04:05,553 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Roles.Dto.PermissionDto
+DEBUG 2017-09-24 23:04:05,553 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Roles.Dto.RoleDto
+DEBUG 2017-09-24 23:04:05,553 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-09-24 23:04:05,553 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-09-24 23:04:05,553 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.MultiTenancy.Dto.TenantDto
+DEBUG 2017-09-24 23:04:05,553 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Domain.Phone.AddPhoneInput
+DEBUG 2017-09-24 23:04:05,553 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Domain.Phone.PhoneInPersonDto
+DEBUG 2017-09-24 23:04:05,553 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Domain.Person.Dto.CreatePersonInput
+DEBUG 2017-09-24 23:04:05,553 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Domain.Person.Dto.PersonDto
+DEBUG 2017-09-24 23:04:05,553 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2017-09-24 23:04:05,553 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Web.Models.PhoneBook.EditPersonModalViewModel
+DEBUG 2017-09-24 23:04:05,553 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Don.PhonebookCore2.Web.Models.PhoneBook.IndexViewModel
+INFO  2017-09-24 23:04:08,725 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2017-09-24 23:04:12,741 [5    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:04:13,254 [5    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:04:13,372 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.HomeController.Index (Don.PhonebookCore2.Web.Mvc) with arguments ((null)) - ModelState is Valid
+INFO  2017-09-24 23:04:16,867 [12   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+INFO  2017-09-24 23:04:20,620 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.HomeController.Index (Don.PhonebookCore2.Web.Mvc) in 7392.5825ms
+INFO  2017-09-24 23:04:20,631 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11931.8711ms 200 text/html; charset=utf-8
+INFO  2017-09-24 23:04:20,690 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636418910454765372  
+INFO  2017-09-24 23:04:20,716 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636418910454765372  
+INFO  2017-09-24 23:04:20,726 [11   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:04:20,736 [5    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:04:20,823 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2017-09-24 23:04:20,886 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2017-09-24 23:04:21,653 [5    ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-24 23:04:21,662 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 895.4894ms
+INFO  2017-09-24 23:04:21,667 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 951.8921ms 200 application/x-javascript; charset=utf-8
+INFO  2017-09-24 23:04:21,674 [11   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-24 23:04:21,683 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 898.2058ms
+INFO  2017-09-24 23:04:21,692 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1001.1504ms 200 text/plain; charset=utf-8
+INFO  2017-09-24 23:04:27,995 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/PhoneBook  
+INFO  2017-09-24 23:04:28,006 [10   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:04:28,015 [10   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:04:28,601 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.Index (Don.PhonebookCore2.Web.Mvc) with arguments (Don.PhonebookCore2.Domain.Person.Dto.GetPeopleInput) - ModelState is Valid
+INFO  2017-09-24 23:04:29,263 [5    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/PhoneBook/Index.cshtml.
+WARN  2017-09-24 23:04:29,301 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateNewPerson' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,314 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'SearchWithThreeDot' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,318 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'Type' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,319 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneNumber' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,481 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,483 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,487 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,490 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,492 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Business' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,495 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'Type' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,496 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneNumber' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,498 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,499 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,500 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,501 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,502 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Business' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:04:29,503 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateNewPerson' in localization source 'PhonebookCore2'!
+INFO  2017-09-24 23:04:30,004 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.Index (Don.PhonebookCore2.Web.Mvc) in 1986.3469ms
+INFO  2017-09-24 23:04:30,011 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2014.0884ms 200 text/html; charset=utf-8
+INFO  2017-09-24 23:04:30,042 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636418910454765372  
+INFO  2017-09-24 23:04:30,061 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:04:30,138 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636418910454765372  
+INFO  2017-09-24 23:04:30,162 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2017-09-24 23:04:30,164 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/PhoneBook/Index.js?v=9noUfaUoLuE-AstLUkDbCV14eEtS8G5-Dfz9c_Fr-xs  
+INFO  2017-09-24 23:04:30,170 [6    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-24 23:04:30,175 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 106.3152ms
+INFO  2017-09-24 23:04:30,182 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 139.0693ms 200 text/plain; charset=utf-8
+INFO  2017-09-24 23:04:30,190 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/PhoneBook/Index.js was not modified
+INFO  2017-09-24 23:04:30,220 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 81.5703ms 304 application/javascript
+INFO  2017-09-24 23:04:30,248 [5    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:04:30,290 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2017-09-24 23:04:30,339 [5    ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-24 23:04:30,344 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 90.0963ms
+INFO  2017-09-24 23:04:30,349 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 234.6045ms 200 application/x-javascript; charset=utf-8
+INFO  2017-09-24 23:04:32,056 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/PhoneBook/EditPersonModal?personId=3 application/html 0
+INFO  2017-09-24 23:04:32,066 [5    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:04:32,077 [5    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:04:32,115 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) with arguments (3) - ModelState is Valid
+INFO  2017-09-24 23:04:32,642 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) in 564.4673ms
+ERROR 2017-09-24 23:04:32,934 [6    ] nostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(11,36): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(16,36): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(26,37): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(36,37): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Don.PhonebookCore2.Authentication.JwtBearer.JwtTokenMiddleware.<>c.<<UseJwtTokenMiddleware>b__0_0>d.MoveNext() in E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Core\Authentication\JwtBearer\JwtTokenMiddleware.cs:line 22
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+INFO  2017-09-24 23:04:33,006 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 946.888ms 500 text/html; charset=utf-8
+INFO  2017-09-24 23:04:34,070 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/PhoneBook/EditPersonModal?personId=3 application/html 0
+INFO  2017-09-24 23:04:34,081 [5    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:04:34,088 [5    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:04:34,127 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) with arguments (3) - ModelState is Valid
+INFO  2017-09-24 23:04:34,284 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) in 196.4953ms
+ERROR 2017-09-24 23:04:34,478 [6    ] nostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(11,36): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(16,36): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(26,37): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(36,37): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Don.PhonebookCore2.Authentication.JwtBearer.JwtTokenMiddleware.<>c.<<UseJwtTokenMiddleware>b__0_0>d.MoveNext() in E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Core\Authentication\JwtBearer\JwtTokenMiddleware.cs:line 22
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+INFO  2017-09-24 23:04:34,525 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 451.3763ms 500 text/html; charset=utf-8
+INFO  2017-09-24 23:04:34,744 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/PhoneBook/EditPersonModal?personId=3 application/html 0
+INFO  2017-09-24 23:04:34,759 [10   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:04:34,766 [10   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:04:34,805 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) with arguments (3) - ModelState is Valid
+INFO  2017-09-24 23:04:34,925 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/PhoneBook/EditPersonModal?personId=3 application/html 0
+INFO  2017-09-24 23:04:34,936 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) in 170.0889ms
+INFO  2017-09-24 23:04:35,064 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:04:35,070 [6    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:04:35,109 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) with arguments (3) - ModelState is Valid
+INFO  2017-09-24 23:04:35,271 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) in 200.215ms
+ERROR 2017-09-24 23:04:35,416 [12   ] nostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(11,36): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(16,36): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(26,37): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(36,37): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Don.PhonebookCore2.Authentication.JwtBearer.JwtTokenMiddleware.<>c.<<UseJwtTokenMiddleware>b__0_0>d.MoveNext() in E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Core\Authentication\JwtBearer\JwtTokenMiddleware.cs:line 22
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+INFO  2017-09-24 23:04:35,462 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 716.9777ms 500 text/html; charset=utf-8
+ERROR 2017-09-24 23:04:35,487 [6    ] nostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(11,36): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(16,36): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(26,37): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(36,37): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Don.PhonebookCore2.Authentication.JwtBearer.JwtTokenMiddleware.<>c.<<UseJwtTokenMiddleware>b__0_0>d.MoveNext() in E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Core\Authentication\JwtBearer\JwtTokenMiddleware.cs:line 22
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+INFO  2017-09-24 23:04:35,545 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 622.3979ms 500 text/html; charset=utf-8
+INFO  2017-09-24 23:04:42,010 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/PhoneBook/EditPersonModal?personId=3  
+INFO  2017-09-24 23:04:42,025 [11   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:04:42,031 [11   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:04:42,074 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) with arguments (3) - ModelState is Valid
+INFO  2017-09-24 23:04:42,184 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) in 153.7234ms
+ERROR 2017-09-24 23:04:42,365 [5    ] nostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(11,36): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(16,36): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(26,37): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\Views\PhoneBook\_EditPersonModal.cshtml(36,37): error CS1061: 'EditPersonModalViewModel' does not contain a definition for 'Person' and no extension method 'Person' accepting a first argument of type 'EditPersonModalViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Don.PhonebookCore2.Authentication.JwtBearer.JwtTokenMiddleware.<>c.<<UseJwtTokenMiddleware>b__0_0>d.MoveNext() in E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Core\Authentication\JwtBearer\JwtTokenMiddleware.cs:line 22
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+INFO  2017-09-24 23:04:42,413 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 400.3966ms 500 text/html; charset=utf-8
+INFO  2017-09-24 23:05:44,556 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/PhoneBook/EditPersonModal?personId=3  
+INFO  2017-09-24 23:05:44,569 [39   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:05:44,575 [39   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:05:44,611 [39   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) with arguments (3) - ModelState is Valid
+INFO  2017-09-24 23:05:44,988 [5    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/PhoneBook/_EditPersonModal.cshtml.
+WARN  2017-09-24 23:05:45,000 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'EditPerson' in localization source 'PhonebookCore2'!
+INFO  2017-09-24 23:05:45,019 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) in 443.1263ms
+INFO  2017-09-24 23:05:45,028 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 482.6439ms 200 text/html; charset=utf-8
+INFO  2017-09-24 23:05:45,037 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/PhoneBook/_PersonEditModal.js?v=St_DTOj36Kt_PfEGmrbZ5MjK_pyQTCgaJj1VHLvoRCs  
+INFO  2017-09-24 23:05:45,043 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/PhoneBook/_PersonEditModal.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\PhoneBook\_PersonEditModal.js'
+INFO  2017-09-24 23:05:45,056 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 18.2493ms 200 application/javascript
+INFO  2017-09-24 23:05:45,069 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/favicon.ico  
+INFO  2017-09-24 23:05:45,074 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\favicon.ico'
+INFO  2017-09-24 23:05:45,090 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 20.5644ms 200 image/x-icon
+INFO  2017-09-24 23:05:53,110 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/PhoneBook  
+INFO  2017-09-24 23:05:53,122 [41   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:05:53,130 [41   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:05:53,168 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.Index (Don.PhonebookCore2.Web.Mvc) with arguments (Don.PhonebookCore2.Domain.Person.Dto.GetPeopleInput) - ModelState is Valid
+INFO  2017-09-24 23:05:53,318 [5    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/PhoneBook/Index.cshtml.
+WARN  2017-09-24 23:05:53,320 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateNewPerson' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,321 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'SearchWithThreeDot' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,325 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'Type' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,326 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneNumber' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,327 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,328 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,329 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,330 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,331 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Business' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,334 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'Type' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,335 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneNumber' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,336 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,337 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,338 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,339 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,340 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Business' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:05:53,341 [5    ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateNewPerson' in localization source 'PhonebookCore2'!
+INFO  2017-09-24 23:05:53,496 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.Index (Don.PhonebookCore2.Web.Mvc) in 365.6665ms
+INFO  2017-09-24 23:05:53,504 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 391.818ms 200 text/html; charset=utf-8
+INFO  2017-09-24 23:05:53,520 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/roboto.css?v=DWPiEyLnt8XZ68WQeudmZPGSejowhmQNUUhaX8dYF1Q  
+INFO  2017-09-24 23:05:53,547 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.css?v=2SsVsQpWRHM3EJ4D4MT4RRpiEXbEuK0vEjPxVr5P7Ek  
+INFO  2017-09-24 23:05:53,574 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/css/bootstrap.css?v=rYUBh-J0b_zGCzbG02wJhid-ncHyd0BsoUYpjLLSowk  
+INFO  2017-09-24 23:05:53,610 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/roboto.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\roboto\roboto.css'
+INFO  2017-09-24 23:05:53,613 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+INFO  2017-09-24 23:05:53,617 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/material-icons/materialicons.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\material-icons\materialicons.css'
+INFO  2017-09-24 23:05:53,670 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.css?v=W8a9WvLyUO7CXtOC4f9LoUMwkywM7JSq-Xm5kNsYW08  
+INFO  2017-09-24 23:05:53,694 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-select/dist/css/bootstrap-select.css?v=a7N4Jki3LzSbThclvqbu4nF45twcjuc772JGFhY9qwk  
+INFO  2017-09-24 23:05:53,716 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert.css?v=k66BSDvi6XBdtM2RH6QQvCz2wk81XcWsiZ3kn6uFTmM  
+INFO  2017-09-24 23:05:53,761 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 110.9223ms 200 text/css
+INFO  2017-09-24 23:05:53,820 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap-select/dist/css/bootstrap-select.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\bootstrap-select\dist\css\bootstrap-select.css'
+INFO  2017-09-24 23:05:53,822 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 174.5209ms 200 text/css
+INFO  2017-09-24 23:05:53,849 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\toastr\toastr.css'
+INFO  2017-09-24 23:05:53,881 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\sweetalert\dist\sweetalert.css'
+INFO  2017-09-24 23:05:53,902 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css?v=l7wu43l7XpKWzFn29hiH8AFe4I_CNzbCPmaAQivPYMg  
+INFO  2017-09-24 23:05:53,927 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 287.3355ms 200 text/css
+INFO  2017-09-24 23:05:53,950 [42   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 275.5459ms 200 text/css
+INFO  2017-09-24 23:05:53,972 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/css/font-awesome.css?v=NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w  
+INFO  2017-09-24 23:05:54,020 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 322.7391ms 200 text/css
+INFO  2017-09-24 23:05:54,043 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.css'
+INFO  2017-09-24 23:05:54,054 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 359.3016ms 200 text/css
+INFO  2017-09-24 23:05:54,088 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/css/font-awesome.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\font-awesome\css\font-awesome.css'
+INFO  2017-09-24 23:05:54,163 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/style.css?v=yL1_ikVC9k-ZNukgUJ_Jk9cK0TBzvJLMIohPbHrAf0g  
+INFO  2017-09-24 23:05:54,189 [42   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.css?v=0zP86LzXedNkkBjePtKrMTAPuIy6EzHfGlyYvsmGLBw  
+INFO  2017-09-24 23:05:54,214 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 259.8424ms 200 text/css
+INFO  2017-09-24 23:05:54,217 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/style.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\css\style.css'
+INFO  2017-09-24 23:05:54,239 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/animate.css/animate.css?v=00w68NO3TLuHjKRHJmjrrgJBDtG_6OhbJEu1gtHcsuo  
+INFO  2017-09-24 23:05:54,287 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 250.4332ms 200 text/css
+INFO  2017-09-24 23:05:54,358 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/materialize.css?v=OdWlipUYj8b9Oa4RyT45njteIcxH-4pGocqe0r0V8js  
+INFO  2017-09-24 23:05:54,381 [42   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/Waves/dist/waves.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\Waves\dist\waves.css'
+INFO  2017-09-24 23:05:54,402 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/animate.css/animate.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\animate.css\animate.css'
+INFO  2017-09-24 23:05:54,409 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/themes/all-themes.css?v=XaAlkmhL9gA6mBxpcxGYAWxggxkIpRmT9qGbKejs6eA  
+INFO  2017-09-24 23:05:54,413 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/don.css?v=Ovdx3kf-5XcsN3vhoDedqlRTCZHKeMszFTziS2hq6bM  
+INFO  2017-09-24 23:05:54,442 [45   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/materialize.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\css\materialize.css'
+INFO  2017-09-24 23:05:54,489 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/themes/all-themes.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\css\themes\all-themes.css'
+INFO  2017-09-24 23:05:54,491 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 336.6721ms 200 text/css
+INFO  2017-09-24 23:05:54,514 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/don.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\css\don.css'
+INFO  2017-09-24 23:05:54,540 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 311.5562ms 200 text/css
+INFO  2017-09-24 23:05:54,564 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 345.4442ms 200 text/css
+INFO  2017-09-24 23:05:54,658 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 349.733ms 200 text/css
+INFO  2017-09-24 23:05:54,706 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/_Layout.css?v=uq7unI_U0xZr0Pbyzeu6KfbJKHVFuv0wNJ4CrrhQknw  
+INFO  2017-09-24 23:05:54,709 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 251.45ms 200 text/css
+INFO  2017-09-24 23:05:54,733 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/json2/json2.js?v=EZJ68U7eUi8uSP0MRRUalYten2eOlhREE9kJOIbIeYg  
+INFO  2017-09-24 23:05:54,738 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 202.5512ms 200 text/css
+INFO  2017-09-24 23:05:54,772 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/json2/json2.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\json2\json2.js'
+INFO  2017-09-24 23:05:54,774 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/_Layout.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\Shared\_Layout.css'
+INFO  2017-09-24 23:05:54,806 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 162.0117ms 200 application/javascript
+INFO  2017-09-24 23:05:54,809 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 187.6129ms 200 text/css
+INFO  2017-09-24 23:05:54,861 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-validation/dist/jquery.validate.js?v=KuzD50lDGNI5jq_ipt4hwDpSJk3fhseTR1jdvaBoZLs  
+INFO  2017-09-24 23:05:54,887 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.js?v=C7DJ6LzTt1Hvj9fd-yRnySs3I4T2B8XmQ3TqXQjc00g  
+INFO  2017-09-24 23:05:54,890 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+INFO  2017-09-24 23:05:54,908 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/js/bootstrap.js?v=3vw5dArBhZ2OJ4XtRzIIQJYn6Hrd1fePLeqsuToS1R0  
+INFO  2017-09-24 23:05:54,911 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\toastr\toastr.js'
+INFO  2017-09-24 23:05:54,938 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+INFO  2017-09-24 23:05:54,946 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery/dist/jquery.js?v=oYqpLeqZe9cetUDV-TFiBZHp3uJ-X4F5eLs4W6uSTSE  
+INFO  2017-09-24 23:05:54,960 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/moment/min/moment-with-locales.js?v=7CN4bWPV0U57HDA4YjdCBKCAynhqdWErjNn-5rrsW_I  
+INFO  2017-09-24 23:05:54,984 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 96.8511ms 200 application/javascript
+INFO  2017-09-24 23:05:55,030 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blockUI/jquery.blockUI.js?v=oQaw-JJuUcJQ9QVYMcFnPxICDT-hv8-kuxT2FNzTGhc  
+INFO  2017-09-24 23:05:55,081 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\jquery\dist\jquery.js'
+INFO  2017-09-24 23:05:55,083 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 79.6373ms 200 application/javascript
+INFO  2017-09-24 23:05:55,100 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/moment/min/moment-with-locales.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\moment\min\moment-with-locales.js'
+INFO  2017-09-24 23:05:55,130 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 146.3374ms 200 application/javascript
+INFO  2017-09-24 23:05:55,148 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 288.8092ms 200 application/javascript
+INFO  2017-09-24 23:05:55,190 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/blockUI/jquery.blockUI.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\blockUI\jquery.blockUI.js'
+INFO  2017-09-24 23:05:55,194 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2  
+INFO  2017-09-24 23:05:55,233 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2  
+INFO  2017-09-24 23:05:55,258 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0  
+INFO  2017-09-24 23:05:55,306 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\roboto\d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'
+INFO  2017-09-24 23:05:55,316 [42   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 417.3976ms 200 application/javascript
+INFO  2017-09-24 23:05:55,322 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\roboto\CWB0XYA8bzo0kSThX0UTuA.woff2'
+INFO  2017-09-24 23:05:55,329 [45   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/fonts/fontawesome-webfont.woff2'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2'
+INFO  2017-09-24 23:05:55,339 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.woff2  
+INFO  2017-09-24 23:05:55,398 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 238.0799ms 200 font/woff2
+INFO  2017-09-24 23:05:55,403 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 185.6742ms 200 font/woff2
+INFO  2017-09-24 23:05:55,408 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/material-icons/materialicons.woff2'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\material-icons\materialicons.woff2'
+INFO  2017-09-24 23:05:55,428 [42   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2  
+INFO  2017-09-24 23:05:55,447 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 291.5947ms 200 application/javascript
+INFO  2017-09-24 23:05:55,480 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 186.9513ms 200 font/woff2
+INFO  2017-09-24 23:05:55,484 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 278.6827ms 200 font/woff2
+INFO  2017-09-24 23:05:55,488 [42   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\roboto\mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2'
+INFO  2017-09-24 23:05:55,493 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2017-09-24 23:05:55,528 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/images/user.png  
+INFO  2017-09-24 23:05:55,563 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.png'
+INFO  2017-09-24 23:05:55,567 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/images/user-img-background.jpg  
+INFO  2017-09-24 23:05:55,572 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 164.2174ms 200 font/woff2
+INFO  2017-09-24 23:05:55,577 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/spin.js?v=GySbz3oZXNlwoawo5PpYy0iM38B-q3jyi_HLw00uxy0  
+INFO  2017-09-24 23:05:55,593 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/user-img-background.jpg'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\images\user-img-background.jpg'
+INFO  2017-09-24 23:05:55,624 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert-dev.js?v=Y6AEuvugryve80FgzPE3e2EONgfiYPcaSaqF-vIFGIA  
+INFO  2017-09-24 23:05:55,638 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/user.png'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\images\user.png'
+INFO  2017-09-24 23:05:55,644 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/jquery.spin.js?v=EG38bUU5b2M64hy9cNAzu_cQBEsiBYsDifOcoHqNd2k  
+INFO  2017-09-24 23:05:55,654 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/spin.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\spin.js\spin.js'
+INFO  2017-09-24 23:05:55,658 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 130.1343ms 200 image/png
+INFO  2017-09-24 23:05:55,672 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 175.0166ms 200 image/jpeg
+INFO  2017-09-24 23:05:55,675 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 207.7158ms 200 image/png
+INFO  2017-09-24 23:05:55,793 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 148.1283ms 200 application/javascript
+INFO  2017-09-24 23:05:55,818 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.js?v=Lar7zQhqgdoUsaqhuwkgnWgsC-eRWIxHhJPV-QtrDog  
+INFO  2017-09-24 23:05:55,842 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-select/dist/js/bootstrap-select.js?v=_KDPX2Vvqq8sySMxlLNJxt9j6Cmb8i_xp602ozhYxzI  
+INFO  2017-09-24 23:05:55,888 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/jquery.spin.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\spin.js\jquery.spin.js'
+INFO  2017-09-24 23:05:55,890 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert-dev.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\sweetalert\dist\sweetalert-dev.js'
+INFO  2017-09-24 23:05:55,922 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-slimscroll/jquery.slimscroll.js?v=4K6ZHzwMYR5_eU2SeDIaByus_qki9IFY8hmxl5U6D1Y  
+INFO  2017-09-24 23:05:55,925 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/push.js/push.js?v=HDxbpm8oBKwe1bmX9Z1SahYYA7zEbc1dk7LfopvOvoE  
+INFO  2017-09-24 23:05:55,947 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/Waves/dist/waves.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\Waves\dist\waves.js'
+INFO  2017-09-24 23:05:55,977 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 402.2785ms 200 application/javascript
+INFO  2017-09-24 23:05:56,000 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/push.js/push.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\push.js\push.js'
+INFO  2017-09-24 23:05:56,013 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 299.4499ms 200 application/javascript
+INFO  2017-09-24 23:05:56,043 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap-select/dist/js/bootstrap-select.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\bootstrap-select\dist\js\bootstrap-select.js'
+INFO  2017-09-24 23:05:56,047 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=PCUhVDVZp55Lu8KbdjXlvgXrD5vWl9TLhmEbULarsqU  
+INFO  2017-09-24 23:05:56,071 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 277.4044ms 200 application/javascript
+INFO  2017-09-24 23:05:56,084 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-slimscroll/jquery.slimscroll.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\jquery-slimscroll\jquery.slimscroll.js'
+INFO  2017-09-24 23:05:56,137 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.jquery.js'
+INFO  2017-09-24 23:05:56,164 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 135.9563ms 200 application/javascript
+INFO  2017-09-24 23:05:56,168 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 351.8065ms 200 application/javascript
+INFO  2017-09-24 23:05:56,180 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/abp.js?v=8Fv5Ryar8BgkV6_q_U-zsW2dA57HxErdoXVKogeTUy4  
+INFO  2017-09-24 23:05:56,202 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 391.5714ms 200 application/javascript
+INFO  2017-09-24 23:05:56,232 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=ImopdkB8alCil1HigOwW3CDqWKsLZXyplf7TXBbjRnE  
+INFO  2017-09-24 23:05:56,251 [45   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/abp.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\abp.js'
+INFO  2017-09-24 23:05:56,254 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 160.3111ms 200 application/javascript
+INFO  2017-09-24 23:05:56,261 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=Y3zoG-hSFKmbS3BHKo_wFWRPbyzJXKoNrnF73uFdtqU  
+INFO  2017-09-24 23:05:56,304 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=pHFl_MDwwZLcdWvFBdIWQRNd1TYnlLqWz81WI3l1bNA  
+INFO  2017-09-24 23:05:56,318 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=RJuGDX616JN_UziXsmKnth0alpECKCx0gtxKZVrZWxY  
+INFO  2017-09-24 23:05:56,325 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.blockUI.js'
+INFO  2017-09-24 23:05:56,328 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 165.7786ms 200 application/javascript
+INFO  2017-09-24 23:05:56,330 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.toastr.js'
+INFO  2017-09-24 23:05:56,344 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.sweet-alert.js'
+INFO  2017-09-24 23:05:56,371 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/admin.js  
+INFO  2017-09-24 23:05:56,400 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.spin.js'
+INFO  2017-09-24 23:05:56,405 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 203.2892ms 200 application/javascript
+INFO  2017-09-24 23:05:56,410 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/admin.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\js\admin.js'
+INFO  2017-09-24 23:05:56,412 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 102.134ms 200 application/javascript
+INFO  2017-09-24 23:05:56,446 [42   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 131.984ms 200 application/javascript
+INFO  2017-09-24 23:05:56,555 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 169.8013ms 200 application/javascript
+INFO  2017-09-24 23:05:56,565 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 137.6754ms 200 application/javascript
+INFO  2017-09-24 23:05:56,643 [42   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636418910454765372  
+INFO  2017-09-24 23:05:56,645 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/main.js?v=J1Y5oH_ZzbVItxB9qVXbjjlMVO5hnLTSGarx1ef8pyA  
+INFO  2017-09-24 23:05:56,672 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/_Layout.js?v=jOYc7_5N1zFKt3qTihQ-9Kc0wjSMXkAeHUXNyvn8sYo  
+INFO  2017-09-24 23:05:56,695 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/PhoneBook/Index.js?v=9noUfaUoLuE-AstLUkDbCV14eEtS8G5-Dfz9c_Fr-xs  
+INFO  2017-09-24 23:05:56,718 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636418910454765372  
+INFO  2017-09-24 23:05:56,720 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/main.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\js\main.js'
+INFO  2017-09-24 23:05:56,729 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/PhoneBook/Index.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\PhoneBook\Index.js'
+INFO  2017-09-24 23:05:56,738 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 240.8861ms 200 application/javascript
+INFO  2017-09-24 23:05:56,744 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/_Layout.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\Shared\_Layout.js'
+INFO  2017-09-24 23:05:56,746 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 119.5593ms 200 application/javascript
+INFO  2017-09-24 23:05:56,784 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 265.6418ms 200 application/javascript
+INFO  2017-09-24 23:05:56,786 [40   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:05:56,808 [42   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:05:56,946 [42   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2017-09-24 23:05:56,948 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2017-09-24 23:05:56,954 [40   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-24 23:05:56,960 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 143.3323ms
+INFO  2017-09-24 23:05:56,966 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 448.9514ms 200 text/plain; charset=utf-8
+INFO  2017-09-24 23:05:57,013 [42   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-24 23:05:57,019 [42   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 201.8988ms
+INFO  2017-09-24 23:05:57,024 [42   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 485.1625ms 200 application/x-javascript; charset=utf-8
+INFO  2017-09-24 23:05:58,643 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/PhoneBook/EditPersonModal?personId=3 application/html 0
+INFO  2017-09-24 23:05:58,654 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:05:58,660 [6    ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:05:58,693 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) with arguments (3) - ModelState is Valid
+INFO  2017-09-24 23:05:58,833 [6    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/PhoneBook/_EditPersonModal.cshtml.
+WARN  2017-09-24 23:05:58,835 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'EditPerson' in localization source 'PhonebookCore2'!
+INFO  2017-09-24 23:05:58,846 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) in 184.9158ms
+INFO  2017-09-24 23:05:58,853 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 209.4195ms 200 text/html; charset=utf-8
+INFO  2017-09-24 23:05:58,865 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/PhoneBook/_PersonEditModal.js?v=St_DTOj36Kt_PfEGmrbZ5MjK_pyQTCgaJj1VHLvoRCs&_=1506283555193  
+INFO  2017-09-24 23:05:58,870 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/PhoneBook/_PersonEditModal.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\PhoneBook\_PersonEditModal.js'
+INFO  2017-09-24 23:05:58,878 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12.4196ms 200 application/javascript
+INFO  2017-09-24 23:06:08,583 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/api/services/app/Person/EditPerson application/json 99
+INFO  2017-09-24 23:06:08,597 [41   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:06:08,719 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Domain.Person.PersonAppService.EditPerson (Don.PhonebookCore2.Application) with arguments (Don.PhonebookCore2.Domain.Person.Dto.EditPersonInput) - ModelState is Valid
+INFO  2017-09-24 23:06:11,282 [39   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-24 23:06:11,296 [39   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Domain.Person.PersonAppService.EditPerson (Don.PhonebookCore2.Application) in 2680.2179ms
+INFO  2017-09-24 23:06:11,303 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2722.7164ms 200 application/json; charset=utf-8
+INFO  2017-09-24 23:06:11,315 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/PhoneBook  
+INFO  2017-09-24 23:06:11,325 [41   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:06:11,332 [41   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:06:11,372 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.Index (Don.PhonebookCore2.Web.Mvc) with arguments (Don.PhonebookCore2.Domain.Person.Dto.GetPeopleInput) - ModelState is Valid
+INFO  2017-09-24 23:06:11,517 [43   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/PhoneBook/Index.cshtml.
+WARN  2017-09-24 23:06:11,519 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateNewPerson' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,521 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'SearchWithThreeDot' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,524 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Type' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,525 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneNumber' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,526 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,528 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,529 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,529 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,530 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Business' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,534 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'Type' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,534 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneNumber' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,536 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,537 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,538 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,539 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,540 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Business' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:06:11,541 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateNewPerson' in localization source 'PhonebookCore2'!
+INFO  2017-09-24 23:06:11,691 [39   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.Index (Don.PhonebookCore2.Web.Mvc) in 358.6472ms
+INFO  2017-09-24 23:06:11,697 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 381.7295ms 200 text/html; charset=utf-8
+INFO  2017-09-24 23:06:11,729 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636418910454765372  
+INFO  2017-09-24 23:06:11,740 [41   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:06:11,844 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2017-09-24 23:06:11,846 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636418910454765372  
+INFO  2017-09-24 23:06:11,851 [41   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-24 23:06:11,855 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 108.9225ms
+INFO  2017-09-24 23:06:11,863 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 131.7332ms 200 text/plain; charset=utf-8
+INFO  2017-09-24 23:06:11,873 [43   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:06:11,917 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2017-09-24 23:06:11,959 [43   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-24 23:06:11,964 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 83.5413ms
+INFO  2017-09-24 23:06:11,970 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 192.2234ms 200 application/x-javascript; charset=utf-8
+INFO  2017-09-24 23:06:24,152 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/PhoneBook/EditPersonModal?personId=3 application/html 0
+INFO  2017-09-24 23:06:24,162 [41   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:06:24,168 [41   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:06:24,203 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) with arguments (3) - ModelState is Valid
+INFO  2017-09-24 23:06:24,369 [41   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/PhoneBook/_EditPersonModal.cshtml.
+WARN  2017-09-24 23:06:24,371 [41   ] naries.DictionaryBasedLocalizationSource - Can not find 'EditPerson' in localization source 'PhonebookCore2'!
+INFO  2017-09-24 23:06:24,381 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) in 213.2417ms
+INFO  2017-09-24 23:06:24,387 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 234.2716ms 200 text/html; charset=utf-8
+INFO  2017-09-24 23:06:24,395 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/PhoneBook/_PersonEditModal.js?v=St_DTOj36Kt_PfEGmrbZ5MjK_pyQTCgaJj1VHLvoRCs&_=1506283571909  
+INFO  2017-09-24 23:06:24,400 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/PhoneBook/_PersonEditModal.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\PhoneBook\_PersonEditModal.js'
+INFO  2017-09-24 23:06:24,407 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.717ms 200 application/javascript
+INFO  2017-09-24 23:06:27,769 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/PhoneBook/EditPersonModal?personId=3 application/html 0
+INFO  2017-09-24 23:06:27,780 [39   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:06:27,786 [39   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:06:27,818 [39   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) with arguments (3) - ModelState is Valid
+INFO  2017-09-24 23:06:27,940 [43   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/PhoneBook/_EditPersonModal.cshtml.
+WARN  2017-09-24 23:06:27,942 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'EditPerson' in localization source 'PhonebookCore2'!
+INFO  2017-09-24 23:06:27,953 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) in 167.1184ms
+INFO  2017-09-24 23:06:27,959 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 188.5034ms 200 text/html; charset=utf-8
+INFO  2017-09-24 23:06:27,986 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/PhoneBook/_PersonEditModal.js?v=St_DTOj36Kt_PfEGmrbZ5MjK_pyQTCgaJj1VHLvoRCs&_=1506283571910  
+INFO  2017-09-24 23:06:27,991 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/PhoneBook/_PersonEditModal.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\PhoneBook\_PersonEditModal.js'
+INFO  2017-09-24 23:06:28,004 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 38.8694ms 200 application/javascript
+INFO  2017-09-24 23:06:33,463 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/PhoneBook/EditPersonModal?personId=3 application/html 0
+INFO  2017-09-24 23:06:33,473 [41   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:06:33,479 [41   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:06:33,511 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) with arguments (3) - ModelState is Valid
+INFO  2017-09-24 23:06:33,629 [43   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/PhoneBook/_EditPersonModal.cshtml.
+WARN  2017-09-24 23:06:33,631 [43   ] naries.DictionaryBasedLocalizationSource - Can not find 'EditPerson' in localization source 'PhonebookCore2'!
+INFO  2017-09-24 23:06:33,641 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) in 162.6783ms
+INFO  2017-09-24 23:06:33,646 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 183.2355ms 200 text/html; charset=utf-8
+INFO  2017-09-24 23:06:33,674 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/PhoneBook/_PersonEditModal.js?v=St_DTOj36Kt_PfEGmrbZ5MjK_pyQTCgaJj1VHLvoRCs&_=1506283571911  
+INFO  2017-09-24 23:06:33,679 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/PhoneBook/_PersonEditModal.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\PhoneBook\_PersonEditModal.js'
+INFO  2017-09-24 23:06:33,685 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.0026ms 200 application/javascript
+INFO  2017-09-24 23:07:36,664 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/PhoneBook  
+INFO  2017-09-24 23:07:36,679 [43   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:07:36,686 [43   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:07:36,726 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.Index (Don.PhonebookCore2.Web.Mvc) with arguments (Don.PhonebookCore2.Domain.Person.Dto.GetPeopleInput) - ModelState is Valid
+INFO  2017-09-24 23:07:36,872 [39   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/PhoneBook/Index.cshtml.
+WARN  2017-09-24 23:07:36,881 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateNewPerson' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,883 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'SearchWithThreeDot' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,886 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'Type' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,887 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneNumber' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,888 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,889 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,890 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,891 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,892 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Business' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,895 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'Type' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,896 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneNumber' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,897 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,898 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,899 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,900 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,901 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Business' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:07:36,902 [39   ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateNewPerson' in localization source 'PhonebookCore2'!
+INFO  2017-09-24 23:07:37,054 [54   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.Index (Don.PhonebookCore2.Web.Mvc) in 368.1283ms
+INFO  2017-09-24 23:07:37,059 [54   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 396.215ms 200 text/html; charset=utf-8
+INFO  2017-09-24 23:07:37,103 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/roboto.css?v=DWPiEyLnt8XZ68WQeudmZPGSejowhmQNUUhaX8dYF1Q  
+INFO  2017-09-24 23:07:37,163 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.css?v=2SsVsQpWRHM3EJ4D4MT4RRpiEXbEuK0vEjPxVr5P7Ek  
+INFO  2017-09-24 23:07:37,218 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/roboto.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\roboto\roboto.css'
+INFO  2017-09-24 23:07:37,225 [54   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/css/bootstrap.css?v=rYUBh-J0b_zGCzbG02wJhid-ncHyd0BsoUYpjLLSowk  
+INFO  2017-09-24 23:07:37,254 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/material-icons/materialicons.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\material-icons\materialicons.css'
+INFO  2017-09-24 23:07:37,257 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.css?v=W8a9WvLyUO7CXtOC4f9LoUMwkywM7JSq-Xm5kNsYW08  
+INFO  2017-09-24 23:07:37,292 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 151.6272ms 200 text/css
+INFO  2017-09-24 23:07:37,314 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert.css?v=k66BSDvi6XBdtM2RH6QQvCz2wk81XcWsiZ3kn6uFTmM  
+INFO  2017-09-24 23:07:37,316 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-select/dist/css/bootstrap-select.css?v=a7N4Jki3LzSbThclvqbu4nF45twcjuc772JGFhY9qwk  
+INFO  2017-09-24 23:07:37,388 [54   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+INFO  2017-09-24 23:07:37,398 [51   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap-select/dist/css/bootstrap-select.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\bootstrap-select\dist\css\bootstrap-select.css'
+INFO  2017-09-24 23:07:37,473 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 235.6201ms 200 text/css
+INFO  2017-09-24 23:07:37,477 [56   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\sweetalert\dist\sweetalert.css'
+INFO  2017-09-24 23:07:37,503 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 269.5511ms 200 text/css
+INFO  2017-09-24 23:07:37,527 [53   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\toastr\toastr.css'
+INFO  2017-09-24 23:07:37,619 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 346.6738ms 200 text/css
+INFO  2017-09-24 23:07:37,667 [54   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 333.2073ms 200 text/css
+INFO  2017-09-24 23:07:37,690 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css?v=l7wu43l7XpKWzFn29hiH8AFe4I_CNzbCPmaAQivPYMg  
+INFO  2017-09-24 23:07:37,720 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/css/font-awesome.css?v=NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w  
+INFO  2017-09-24 23:07:37,767 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.css'
+INFO  2017-09-24 23:07:37,769 [54   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/materialize.css?v=OdWlipUYj8b9Oa4RyT45njteIcxH-4pGocqe0r0V8js  
+INFO  2017-09-24 23:07:37,815 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.css?v=0zP86LzXedNkkBjePtKrMTAPuIy6EzHfGlyYvsmGLBw  
+INFO  2017-09-24 23:07:37,845 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/animate.css/animate.css?v=00w68NO3TLuHjKRHJmjrrgJBDtG_6OhbJEu1gtHcsuo  
+INFO  2017-09-24 23:07:37,848 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 381.2725ms 200 text/css
+INFO  2017-09-24 23:07:37,870 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/Waves/dist/waves.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\Waves\dist\waves.css'
+INFO  2017-09-24 23:07:37,940 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/css/font-awesome.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\font-awesome\css\font-awesome.css'
+INFO  2017-09-24 23:07:37,943 [54   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/materialize.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\css\materialize.css'
+INFO  2017-09-24 23:07:37,998 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 366.3043ms 200 text/css
+INFO  2017-09-24 23:07:38,006 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 422.9447ms 200 text/css
+INFO  2017-09-24 23:07:38,028 [51   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/animate.css/animate.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\animate.css\animate.css'
+INFO  2017-09-24 23:07:38,044 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 422.3822ms 200 text/css
+INFO  2017-09-24 23:07:38,135 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/style.css?v=yL1_ikVC9k-ZNukgUJ_Jk9cK0TBzvJLMIohPbHrAf0g  
+INFO  2017-09-24 23:07:38,228 [55   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 310.165ms 200 text/css
+INFO  2017-09-24 23:07:38,251 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/_Layout.css?v=uq7unI_U0xZr0Pbyzeu6KfbJKHVFuv0wNJ4CrrhQknw  
+INFO  2017-09-24 23:07:38,278 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 389.2399ms 200 text/css
+INFO  2017-09-24 23:07:38,300 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/don.css?v=Ovdx3kf-5XcsN3vhoDedqlRTCZHKeMszFTziS2hq6bM  
+INFO  2017-09-24 23:07:38,308 [56   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/style.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\css\style.css'
+INFO  2017-09-24 23:07:38,311 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/themes/all-themes.css?v=XaAlkmhL9gA6mBxpcxGYAWxggxkIpRmT9qGbKejs6eA  
+INFO  2017-09-24 23:07:38,324 [53   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/themes/all-themes.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\css\themes\all-themes.css'
+INFO  2017-09-24 23:07:38,327 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/_Layout.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\Shared\_Layout.css'
+INFO  2017-09-24 23:07:38,359 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/don.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\css\don.css'
+INFO  2017-09-24 23:07:38,382 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 285.5181ms 200 text/css
+INFO  2017-09-24 23:07:38,465 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/json2/json2.js?v=EZJ68U7eUi8uSP0MRRUalYten2eOlhREE9kJOIbIeYg  
+INFO  2017-09-24 23:07:38,470 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 486.7956ms 200 text/css
+INFO  2017-09-24 23:07:38,472 [54   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery/dist/jquery.js?v=oYqpLeqZe9cetUDV-TFiBZHp3uJ-X4F5eLs4W6uSTSE  
+INFO  2017-09-24 23:07:38,497 [55   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 291.2844ms 200 text/css
+INFO  2017-09-24 23:07:38,526 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 393.7245ms 200 text/css
+INFO  2017-09-24 23:07:38,630 [56   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/json2/json2.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\json2\json2.js'
+INFO  2017-09-24 23:07:38,632 [54   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\jquery\dist\jquery.js'
+INFO  2017-09-24 23:07:38,645 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blockUI/jquery.blockUI.js?v=oQaw-JJuUcJQ9QVYMcFnPxICDT-hv8-kuxT2FNzTGhc  
+INFO  2017-09-24 23:07:38,648 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/moment/min/moment-with-locales.js?v=7CN4bWPV0U57HDA4YjdCBKCAynhqdWErjNn-5rrsW_I  
+INFO  2017-09-24 23:07:38,674 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-validation/dist/jquery.validate.js?v=KuzD50lDGNI5jq_ipt4hwDpSJk3fhseTR1jdvaBoZLs  
+INFO  2017-09-24 23:07:38,720 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 252.8289ms 200 application/javascript
+INFO  2017-09-24 23:07:38,746 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/blockUI/jquery.blockUI.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\blockUI\jquery.blockUI.js'
+INFO  2017-09-24 23:07:38,775 [55   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/js/bootstrap.js?v=3vw5dArBhZ2OJ4XtRzIIQJYn6Hrd1fePLeqsuToS1R0  
+INFO  2017-09-24 23:07:38,786 [51   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/moment/min/moment-with-locales.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\moment\min\moment-with-locales.js'
+INFO  2017-09-24 23:07:38,793 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+INFO  2017-09-24 23:07:38,796 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 316.5312ms 200 application/javascript
+INFO  2017-09-24 23:07:38,802 [55   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+INFO  2017-09-24 23:07:38,815 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2  
+INFO  2017-09-24 23:07:38,837 [54   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 168.6513ms 200 application/javascript
+INFO  2017-09-24 23:07:38,897 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 326.3125ms 200 application/javascript
+INFO  2017-09-24 23:07:38,936 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.woff2  
+INFO  2017-09-24 23:07:38,964 [56   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\roboto\d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'
+INFO  2017-09-24 23:07:38,973 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 265.4141ms 200 application/javascript
+INFO  2017-09-24 23:07:38,983 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 476.2121ms 200 application/javascript
+INFO  2017-09-24 23:07:38,995 [54   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2  
+INFO  2017-09-24 23:07:39,004 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/material-icons/materialicons.woff2'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\material-icons\materialicons.woff2'
+INFO  2017-09-24 23:07:39,051 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0  
+INFO  2017-09-24 23:07:39,098 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 231.8213ms 200 font/woff2
+INFO  2017-09-24 23:07:39,101 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2  
+INFO  2017-09-24 23:07:39,113 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/fonts/fontawesome-webfont.woff2'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2'
+INFO  2017-09-24 23:07:39,117 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 181.7487ms 200 font/woff2
+INFO  2017-09-24 23:07:39,139 [54   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\roboto\CWB0XYA8bzo0kSThX0UTuA.woff2'
+INFO  2017-09-24 23:07:39,152 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/images/user-img-background.jpg  
+INFO  2017-09-24 23:07:39,198 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\roboto\mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2'
+INFO  2017-09-24 23:07:39,223 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/user-img-background.jpg'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\images\user-img-background.jpg'
+INFO  2017-09-24 23:07:39,235 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 206.5312ms 200 font/woff2
+INFO  2017-09-24 23:07:39,269 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/images/user.png  
+INFO  2017-09-24 23:07:39,287 [54   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 272.2436ms 200 font/woff2
+INFO  2017-09-24 23:07:39,301 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 226.7193ms 200 image/jpeg
+INFO  2017-09-24 23:07:39,324 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 166.7471ms 200 font/woff2
+INFO  2017-09-24 23:07:39,330 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2017-09-24 23:07:39,391 [54   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.js?v=C7DJ6LzTt1Hvj9fd-yRnySs3I4T2B8XmQ3TqXQjc00g  
+INFO  2017-09-24 23:07:39,419 [53   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/user.png'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\images\user.png'
+INFO  2017-09-24 23:07:39,425 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/jquery.spin.js?v=EG38bUU5b2M64hy9cNAzu_cQBEsiBYsDifOcoHqNd2k  
+INFO  2017-09-24 23:07:39,449 [54   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\toastr\toastr.js'
+INFO  2017-09-24 23:07:39,454 [51   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.png'
+INFO  2017-09-24 23:07:39,458 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/jquery.spin.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\spin.js\jquery.spin.js'
+INFO  2017-09-24 23:07:39,487 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/spin.js?v=GySbz3oZXNlwoawo5PpYy0iM38B-q3jyi_HLw00uxy0  
+INFO  2017-09-24 23:07:39,494 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert-dev.js?v=Y6AEuvugryve80FgzPE3e2EONgfiYPcaSaqF-vIFGIA  
+INFO  2017-09-24 23:07:39,533 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 270.3851ms 200 image/png
+INFO  2017-09-24 23:07:39,537 [55   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 93.9831ms 200 application/javascript
+INFO  2017-09-24 23:07:39,586 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 95.0072ms 200 application/javascript
+INFO  2017-09-24 23:07:39,609 [60   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert-dev.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\sweetalert\dist\sweetalert-dev.js'
+INFO  2017-09-24 23:07:39,661 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 308.7854ms 200 image/png
+INFO  2017-09-24 23:07:39,668 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/spin.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\spin.js\spin.js'
+INFO  2017-09-24 23:07:39,700 [55   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-slimscroll/jquery.slimscroll.js?v=4K6ZHzwMYR5_eU2SeDIaByus_qki9IFY8hmxl5U6D1Y  
+INFO  2017-09-24 23:07:39,750 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.js?v=Lar7zQhqgdoUsaqhuwkgnWgsC-eRWIxHhJPV-QtrDog  
+INFO  2017-09-24 23:07:39,760 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-select/dist/js/bootstrap-select.js?v=_KDPX2Vvqq8sySMxlLNJxt9j6Cmb8i_xp602ozhYxzI  
+INFO  2017-09-24 23:07:39,767 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 285.3879ms 200 application/javascript
+INFO  2017-09-24 23:07:39,770 [55   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-slimscroll/jquery.slimscroll.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\jquery-slimscroll\jquery.slimscroll.js'
+INFO  2017-09-24 23:07:39,778 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 337.344ms 200 application/javascript
+INFO  2017-09-24 23:07:39,796 [53   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap-select/dist/js/bootstrap-select.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\bootstrap-select\dist\js\bootstrap-select.js'
+INFO  2017-09-24 23:07:39,803 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/Waves/dist/waves.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\Waves\dist\waves.js'
+INFO  2017-09-24 23:07:39,854 [55   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 166.7728ms 200 application/javascript
+INFO  2017-09-24 23:07:39,886 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/push.js/push.js?v=HDxbpm8oBKwe1bmX9Z1SahYYA7zEbc1dk7LfopvOvoE  
+INFO  2017-09-24 23:07:39,900 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/abp.js?v=8Fv5Ryar8BgkV6_q_U-zsW2dA57HxErdoXVKogeTUy4  
+INFO  2017-09-24 23:07:40,001 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 213.9729ms 200 application/javascript
+INFO  2017-09-24 23:07:40,029 [55   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=ImopdkB8alCil1HigOwW3CDqWKsLZXyplf7TXBbjRnE  
+INFO  2017-09-24 23:07:40,031 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=PCUhVDVZp55Lu8KbdjXlvgXrD5vWl9TLhmEbULarsqU  
+INFO  2017-09-24 23:07:40,054 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 231.9611ms 200 application/javascript
+INFO  2017-09-24 23:07:40,057 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/push.js/push.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\push.js\push.js'
+INFO  2017-09-24 23:07:40,080 [51   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/abp.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\abp.js'
+INFO  2017-09-24 23:07:40,101 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=RJuGDX616JN_UziXsmKnth0alpECKCx0gtxKZVrZWxY  
+INFO  2017-09-24 23:07:40,114 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 309.8701ms 200 application/javascript
+INFO  2017-09-24 23:07:40,119 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.jquery.js'
+INFO  2017-09-24 23:07:40,121 [55   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.toastr.js'
+INFO  2017-09-24 23:07:40,159 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=Y3zoG-hSFKmbS3BHKo_wFWRPbyzJXKoNrnF73uFdtqU  
+INFO  2017-09-24 23:07:40,189 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 229.1922ms 200 application/javascript
+INFO  2017-09-24 23:07:40,214 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 314.0099ms 200 application/javascript
+INFO  2017-09-24 23:07:40,238 [41   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.spin.js'
+INFO  2017-09-24 23:07:40,240 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 263.9338ms 200 application/javascript
+INFO  2017-09-24 23:07:40,254 [60   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.blockUI.js'
+INFO  2017-09-24 23:07:40,292 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 179.2493ms 200 application/javascript
+INFO  2017-09-24 23:07:40,335 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 199.3725ms 200 application/javascript
+INFO  2017-09-24 23:07:40,357 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=pHFl_MDwwZLcdWvFBdIWQRNd1TYnlLqWz81WI3l1bNA  
+INFO  2017-09-24 23:07:40,382 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/admin.js  
+INFO  2017-09-24 23:07:40,429 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/_Layout.js?v=jOYc7_5N1zFKt3qTihQ-9Kc0wjSMXkAeHUXNyvn8sYo  
+INFO  2017-09-24 23:07:40,501 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/main.js?v=J1Y5oH_ZzbVItxB9qVXbjjlMVO5hnLTSGarx1ef8pyA  
+INFO  2017-09-24 23:07:40,504 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.sweet-alert.js'
+INFO  2017-09-24 23:07:40,508 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636418910454765372  
+INFO  2017-09-24 23:07:40,513 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636418910454765372  
+INFO  2017-09-24 23:07:40,523 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/admin.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\js\admin.js'
+INFO  2017-09-24 23:07:40,557 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 301.8897ms 200 application/javascript
+INFO  2017-09-24 23:07:40,572 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/main.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\js\main.js'
+INFO  2017-09-24 23:07:40,593 [51   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/_Layout.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\Shared\_Layout.js'
+INFO  2017-09-24 23:07:40,599 [56   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:07:40,603 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 283.1754ms 200 application/javascript
+INFO  2017-09-24 23:07:40,650 [60   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:07:40,745 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 305.2888ms 200 application/javascript
+INFO  2017-09-24 23:07:40,791 [53   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 335.3162ms 200 application/javascript
+INFO  2017-09-24 23:07:40,819 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/PhoneBook/Index.js?v=cjUrO_FZx4eaMC631sIYhNnOIsX3GZOKmCpBzaZewGA  
+INFO  2017-09-24 23:07:40,846 [56   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2017-09-24 23:07:40,868 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/PhoneBook/Index.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\PhoneBook\Index.js'
+INFO  2017-09-24 23:07:40,871 [60   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2017-09-24 23:07:40,877 [56   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-24 23:07:40,907 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 202.0804ms 200 application/javascript
+INFO  2017-09-24 23:07:40,930 [56   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 276.3296ms
+INFO  2017-09-24 23:07:40,959 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 602.1653ms 200 text/plain; charset=utf-8
+INFO  2017-09-24 23:07:41,001 [60   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-24 23:07:41,008 [60   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 305.2208ms
+INFO  2017-09-24 23:07:41,013 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 647.1363ms 200 application/x-javascript; charset=utf-8
+INFO  2017-09-24 23:09:03,692 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/PhoneBook/AddPhone application/x-www-form-urlencoded 27
+INFO  2017-09-24 23:09:03,703 [43   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:09:03,728 [43   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+WARN  2017-09-24 23:09:03,823 [40   ] Mvc.ExceptionHandling.AbpExceptionFilter - Method arguments are not valid! See ValidationErrors for details.
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   at Abp.Runtime.Validation.Interception.MethodInvocationValidator.ThrowValidationError() in D:\Github\aspnetboilerplate\src\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:line 128
+   at Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate() in D:\Github\aspnetboilerplate\src\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:line 94
+   at Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.<OnActionExecutionAsync>d__3.MoveNext() in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Validation\AbpValidationActionFilter.cs:line 35
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+WARN  2017-09-24 23:09:03,829 [40   ] Mvc.ExceptionHandling.AbpExceptionFilter - There are 2 validation errors:
+WARN  2017-09-24 23:09:03,829 [40   ] Mvc.ExceptionHandling.AbpExceptionFilter - The Number field is required. (Number)
+WARN  2017-09-24 23:09:03,829 [40   ] Mvc.ExceptionHandling.AbpExceptionFilter - The value 'NaN' is not valid for PersonId. (PersonId)
+INFO  2017-09-24 23:09:03,837 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.AddPhone (Don.PhonebookCore2.Web.Mvc) in 109.5783ms
+ERROR 2017-09-24 23:09:03,994 [40   ] nostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   at Abp.Runtime.Validation.Interception.MethodInvocationValidator.ThrowValidationError() in D:\Github\aspnetboilerplate\src\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:line 128
+   at Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate() in D:\Github\aspnetboilerplate\src\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:line 94
+   at Abp.AspNetCore.Mvc.Validation.AbpValidationActionFilter.<OnActionExecutionAsync>d__3.MoveNext() in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Validation\AbpValidationActionFilter.cs:line 35
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ExceptionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Don.PhonebookCore2.Authentication.JwtBearer.JwtTokenMiddleware.<>c.<<UseJwtTokenMiddleware>b__0_0>d.MoveNext() in E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Core\Authentication\JwtBearer\JwtTokenMiddleware.cs:line 22
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+INFO  2017-09-24 23:09:04,086 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 392.1816ms 500 text/html; charset=utf-8
+INFO  2017-09-24 23:09:13,772 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DELETE http://localhost:62114/api/services/app/Person/DeletePhone?id=2 application/json 
+INFO  2017-09-24 23:09:13,782 [67   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:09:13,825 [67   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Domain.Person.PersonAppService.DeletePhone (Don.PhonebookCore2.Application) with arguments (Abp.Application.Services.Dto.EntityDto`1[System.Int64]) - ModelState is Valid
+INFO  2017-09-24 23:09:13,983 [43   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-24 23:09:13,988 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Domain.Person.PersonAppService.DeletePhone (Don.PhonebookCore2.Application) in 195.5945ms
+INFO  2017-09-24 23:09:13,993 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 228.2622ms 200 application/json; charset=utf-8
+INFO  2017-09-24 23:09:23,878 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/PhoneBook  
+INFO  2017-09-24 23:09:23,889 [43   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:09:23,896 [43   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:09:23,931 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.Index (Don.PhonebookCore2.Web.Mvc) with arguments (Don.PhonebookCore2.Domain.Person.Dto.GetPeopleInput) - ModelState is Valid
+INFO  2017-09-24 23:09:24,077 [67   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/PhoneBook/Index.cshtml.
+WARN  2017-09-24 23:09:24,079 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateNewPerson' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:09:24,081 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'SearchWithThreeDot' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:09:24,084 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'Type' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:09:24,085 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneNumber' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:09:24,086 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:09:24,087 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:09:24,088 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:09:24,089 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Business' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:09:24,092 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'Type' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:09:24,093 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneNumber' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:09:24,094 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:09:24,096 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:09:24,097 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Mobile' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:09:24,098 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Home' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:09:24,099 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'PhoneType_Business' in localization source 'PhonebookCore2'!
+WARN  2017-09-24 23:09:24,100 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateNewPerson' in localization source 'PhonebookCore2'!
+INFO  2017-09-24 23:09:24,249 [68   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.Index (Don.PhonebookCore2.Web.Mvc) in 352.3756ms
+INFO  2017-09-24 23:09:24,255 [68   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 376.7215ms 200 text/html; charset=utf-8
+INFO  2017-09-24 23:09:24,283 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.css?v=2SsVsQpWRHM3EJ4D4MT4RRpiEXbEuK0vEjPxVr5P7Ek  
+INFO  2017-09-24 23:09:24,336 [68   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.css?v=W8a9WvLyUO7CXtOC4f9LoUMwkywM7JSq-Xm5kNsYW08  
+INFO  2017-09-24 23:09:24,359 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert.css?v=k66BSDvi6XBdtM2RH6QQvCz2wk81XcWsiZ3kn6uFTmM  
+INFO  2017-09-24 23:09:24,362 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/roboto.css?v=DWPiEyLnt8XZ68WQeudmZPGSejowhmQNUUhaX8dYF1Q  
+INFO  2017-09-24 23:09:24,393 [70   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-select/dist/css/bootstrap-select.css?v=a7N4Jki3LzSbThclvqbu4nF45twcjuc772JGFhY9qwk  
+INFO  2017-09-24 23:09:24,398 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/css/bootstrap.css?v=rYUBh-J0b_zGCzbG02wJhid-ncHyd0BsoUYpjLLSowk  
+INFO  2017-09-24 23:09:24,402 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/material-icons/materialicons.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\material-icons\materialicons.css'
+INFO  2017-09-24 23:09:24,458 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/roboto.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\roboto\roboto.css'
+INFO  2017-09-24 23:09:24,483 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\sweetalert\dist\sweetalert.css'
+INFO  2017-09-24 23:09:24,491 [67   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+INFO  2017-09-24 23:09:24,494 [68   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\toastr\toastr.css'
+INFO  2017-09-24 23:09:24,535 [70   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap-select/dist/css/bootstrap-select.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\bootstrap-select\dist\css\bootstrap-select.css'
+INFO  2017-09-24 23:09:24,538 [69   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 211.1644ms 200 text/css
+INFO  2017-09-24 23:09:24,571 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 144.97ms 200 text/css
+INFO  2017-09-24 23:09:24,612 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 206.0312ms 200 text/css
+INFO  2017-09-24 23:09:24,687 [68   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 256.9971ms 200 text/css
+INFO  2017-09-24 23:09:24,690 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 290.8202ms 200 text/css
+INFO  2017-09-24 23:09:24,692 [78   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 268.542ms 200 text/css
+INFO  2017-09-24 23:09:24,722 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css?v=l7wu43l7XpKWzFn29hiH8AFe4I_CNzbCPmaAQivPYMg  
+INFO  2017-09-24 23:09:24,726 [69   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/css/font-awesome.css?v=NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w  
+INFO  2017-09-24 23:09:24,866 [68   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/animate.css/animate.css?v=00w68NO3TLuHjKRHJmjrrgJBDtG_6OhbJEu1gtHcsuo  
+INFO  2017-09-24 23:09:24,894 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/style.css?v=yL1_ikVC9k-ZNukgUJ_Jk9cK0TBzvJLMIohPbHrAf0g  
+INFO  2017-09-24 23:09:24,896 [68   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/animate.css/animate.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\animate.css\animate.css'
+INFO  2017-09-24 23:09:24,903 [69   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/css/font-awesome.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\font-awesome\css\font-awesome.css'
+INFO  2017-09-24 23:09:24,904 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/style.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\css\style.css'
+INFO  2017-09-24 23:09:24,907 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.css'
+INFO  2017-09-24 23:09:24,938 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.css?v=0zP86LzXedNkkBjePtKrMTAPuIy6EzHfGlyYvsmGLBw  
+INFO  2017-09-24 23:09:25,003 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/Waves/dist/waves.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\Waves\dist\waves.css'
+INFO  2017-09-24 23:09:25,014 [78   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/materialize.css?v=OdWlipUYj8b9Oa4RyT45njteIcxH-4pGocqe0r0V8js  
+INFO  2017-09-24 23:09:25,066 [66   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 343.5627ms 200 text/css
+INFO  2017-09-24 23:09:25,092 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 284.7424ms 200 text/css
+INFO  2017-09-24 23:09:25,140 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 336.4551ms 200 text/css
+INFO  2017-09-24 23:09:25,186 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 180.5886ms 200 text/css
+INFO  2017-09-24 23:09:25,216 [78   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/materialize.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\css\materialize.css'
+INFO  2017-09-24 23:09:25,293 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 298.2622ms 200 text/css
+INFO  2017-09-24 23:09:25,317 [66   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/_Layout.css?v=uq7unI_U0xZr0Pbyzeu6KfbJKHVFuv0wNJ4CrrhQknw  
+INFO  2017-09-24 23:09:25,387 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/themes/all-themes.css?v=XaAlkmhL9gA6mBxpcxGYAWxggxkIpRmT9qGbKejs6eA  
+INFO  2017-09-24 23:09:25,409 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/css/don.css?v=Ovdx3kf-5XcsN3vhoDedqlRTCZHKeMszFTziS2hq6bM  
+INFO  2017-09-24 23:09:25,411 [70   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 399.4259ms 200 text/css
+INFO  2017-09-24 23:09:25,480 [67   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/themes/all-themes.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\css\themes\all-themes.css'
+INFO  2017-09-24 23:09:25,486 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/don.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\css\don.css'
+INFO  2017-09-24 23:09:25,489 [66   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/_Layout.css'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\Shared\_Layout.css'
+INFO  2017-09-24 23:09:25,552 [68   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery/dist/jquery.js?v=oYqpLeqZe9cetUDV-TFiBZHp3uJ-X4F5eLs4W6uSTSE  
+INFO  2017-09-24 23:09:25,575 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 221.9141ms 200 text/css
+INFO  2017-09-24 23:09:25,578 [69   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 266.4881ms 200 text/css
+INFO  2017-09-24 23:09:25,646 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 398.3645ms 200 text/css
+INFO  2017-09-24 23:09:25,715 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-validation/dist/jquery.validate.js?v=KuzD50lDGNI5jq_ipt4hwDpSJk3fhseTR1jdvaBoZLs  
+INFO  2017-09-24 23:09:25,738 [70   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/json2/json2.js?v=EZJ68U7eUi8uSP0MRRUalYten2eOlhREE9kJOIbIeYg  
+INFO  2017-09-24 23:09:25,793 [69   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/js/bootstrap.js?v=3vw5dArBhZ2OJ4XtRzIIQJYn6Hrd1fePLeqsuToS1R0  
+INFO  2017-09-24 23:09:25,842 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/moment/min/moment-with-locales.js?v=7CN4bWPV0U57HDA4YjdCBKCAynhqdWErjNn-5rrsW_I  
+INFO  2017-09-24 23:09:25,845 [69   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+INFO  2017-09-24 23:09:25,869 [68   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\jquery\dist\jquery.js'
+INFO  2017-09-24 23:09:25,872 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+INFO  2017-09-24 23:09:25,879 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/moment/min/moment-with-locales.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\moment\min\moment-with-locales.js'
+INFO  2017-09-24 23:09:25,885 [70   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/json2/json2.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\json2\json2.js'
+INFO  2017-09-24 23:09:25,890 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/blockUI/jquery.blockUI.js?v=oQaw-JJuUcJQ9QVYMcFnPxICDT-hv8-kuxT2FNzTGhc  
+INFO  2017-09-24 23:09:25,947 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 369.9806ms 200 application/javascript
+INFO  2017-09-24 23:09:25,958 [77   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 248.1895ms 200 application/javascript
+INFO  2017-09-24 23:09:25,983 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/blockUI/jquery.blockUI.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\blockUI\jquery.blockUI.js'
+INFO  2017-09-24 23:09:26,008 [70   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 388.9761ms 200 application/javascript
+INFO  2017-09-24 23:09:26,117 [69   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 291.6749ms 200 application/javascript
+INFO  2017-09-24 23:09:26,126 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.woff2  
+INFO  2017-09-24 23:09:26,131 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 428.544ms 200 application/javascript
+INFO  2017-09-24 23:09:26,160 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 404.3951ms 200 application/javascript
+INFO  2017-09-24 23:09:26,235 [70   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2  
+INFO  2017-09-24 23:09:26,237 [67   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/material-icons/materialicons.woff2'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\material-icons\materialicons.woff2'
+INFO  2017-09-24 23:09:26,260 [77   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2  
+INFO  2017-09-24 23:09:26,314 [69   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2  
+INFO  2017-09-24 23:09:26,352 [77   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\roboto\d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'
+INFO  2017-09-24 23:09:26,356 [70   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\roboto\CWB0XYA8bzo0kSThX0UTuA.woff2'
+INFO  2017-09-24 23:09:26,384 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/images/user-img-background.jpg  
+INFO  2017-09-24 23:09:26,388 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0  
+INFO  2017-09-24 23:09:26,399 [69   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/fonts/roboto/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\fonts\roboto\mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2'
+INFO  2017-09-24 23:09:26,418 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 327.608ms 200 font/woff2
+INFO  2017-09-24 23:09:26,441 [77   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 290.8213ms 200 font/woff2
+INFO  2017-09-24 23:09:26,444 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 285.5868ms 200 font/woff2
+INFO  2017-09-24 23:09:26,500 [68   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 250.2727ms 200 font/woff2
+INFO  2017-09-24 23:09:26,591 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/user-img-background.jpg'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\images\user-img-background.jpg'
+INFO  2017-09-24 23:09:26,601 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/font-awesome/fonts/fontawesome-webfont.woff2'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2'
+INFO  2017-09-24 23:09:26,604 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.js?v=C7DJ6LzTt1Hvj9fd-yRnySs3I4T2B8XmQ3TqXQjc00g  
+INFO  2017-09-24 23:09:26,623 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/images/user.png  
+INFO  2017-09-24 23:09:26,657 [66   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 383.7124ms 200 image/jpeg
+INFO  2017-09-24 23:09:26,680 [77   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2017-09-24 23:09:26,729 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 392.8052ms 200 font/woff2
+INFO  2017-09-24 23:09:26,752 [68   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert-dev.js?v=Y6AEuvugryve80FgzPE3e2EONgfiYPcaSaqF-vIFGIA  
+INFO  2017-09-24 23:09:26,778 [67   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/toastr/toastr.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\toastr\toastr.js'
+INFO  2017-09-24 23:09:26,804 [77   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\famfamfam-flags\dist\sprite\famfamfam-flags.png'
+INFO  2017-09-24 23:09:26,830 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/user.png'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\images\user.png'
+INFO  2017-09-24 23:09:26,854 [66   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/spin.js?v=GySbz3oZXNlwoawo5PpYy0iM38B-q3jyi_HLw00uxy0  
+INFO  2017-09-24 23:09:26,885 [68   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/sweetalert/dist/sweetalert-dev.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\sweetalert\dist\sweetalert-dev.js'
+INFO  2017-09-24 23:09:26,887 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 338.5812ms 200 application/javascript
+INFO  2017-09-24 23:09:26,910 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 307.8492ms 200 image/png
+INFO  2017-09-24 23:09:26,942 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/jquery.spin.js?v=EG38bUU5b2M64hy9cNAzu_cQBEsiBYsDifOcoHqNd2k  
+INFO  2017-09-24 23:09:26,950 [70   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 284.9728ms 200 image/png
+INFO  2017-09-24 23:09:27,021 [66   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/spin.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\spin.js\spin.js'
+INFO  2017-09-24 23:09:27,025 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 339.762ms 200 application/javascript
+INFO  2017-09-24 23:09:27,069 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-slimscroll/jquery.slimscroll.js?v=4K6ZHzwMYR5_eU2SeDIaByus_qki9IFY8hmxl5U6D1Y  
+INFO  2017-09-24 23:09:27,072 [68   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 242.859ms 200 application/javascript
+INFO  2017-09-24 23:09:27,101 [70   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.js?v=Lar7zQhqgdoUsaqhuwkgnWgsC-eRWIxHhJPV-QtrDog  
+INFO  2017-09-24 23:09:27,103 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/spin.js/jquery.spin.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\spin.js\jquery.spin.js'
+INFO  2017-09-24 23:09:27,201 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap-select/dist/js/bootstrap-select.js?v=_KDPX2Vvqq8sySMxlLNJxt9j6Cmb8i_xp602ozhYxzI  
+INFO  2017-09-24 23:09:27,230 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/push.js/push.js?v=HDxbpm8oBKwe1bmX9Z1SahYYA7zEbc1dk7LfopvOvoE  
+INFO  2017-09-24 23:09:27,258 [70   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/Waves/dist/waves.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\Waves\dist\waves.js'
+INFO  2017-09-24 23:09:27,285 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 303.0943ms 200 application/javascript
+INFO  2017-09-24 23:09:27,289 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-slimscroll/jquery.slimscroll.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\jquery-slimscroll\jquery.slimscroll.js'
+INFO  2017-09-24 23:09:27,292 [68   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/abp.js?v=8Fv5Ryar8BgkV6_q_U-zsW2dA57HxErdoXVKogeTUy4  
+INFO  2017-09-24 23:09:27,300 [67   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/push.js/push.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\push.js\push.js'
+INFO  2017-09-24 23:09:27,322 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/bootstrap-select/dist/js/bootstrap-select.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\bootstrap-select\dist\js\bootstrap-select.js'
+INFO  2017-09-24 23:09:27,360 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 360.5027ms 200 application/javascript
+INFO  2017-09-24 23:09:27,428 [77   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 251.8355ms 200 application/javascript
+INFO  2017-09-24 23:09:27,431 [69   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 286.9596ms 200 application/javascript
+INFO  2017-09-24 23:09:27,512 [68   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/abp.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\abp.js'
+INFO  2017-09-24 23:09:27,521 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=Y3zoG-hSFKmbS3BHKo_wFWRPbyzJXKoNrnF73uFdtqU  
+INFO  2017-09-24 23:09:27,529 [78   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 332.1955ms 200 application/javascript
+INFO  2017-09-24 23:09:27,558 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=PCUhVDVZp55Lu8KbdjXlvgXrD5vWl9TLhmEbULarsqU  
+INFO  2017-09-24 23:09:27,564 [77   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=RJuGDX616JN_UziXsmKnth0alpECKCx0gtxKZVrZWxY  
+INFO  2017-09-24 23:09:27,578 [70   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 336.4083ms 200 application/javascript
+INFO  2017-09-24 23:09:27,600 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.blockUI.js'
+INFO  2017-09-24 23:09:27,602 [69   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=ImopdkB8alCil1HigOwW3CDqWKsLZXyplf7TXBbjRnE  
+INFO  2017-09-24 23:09:27,633 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.jquery.js'
+INFO  2017-09-24 23:09:27,657 [77   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.spin.js'
+INFO  2017-09-24 23:09:27,660 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 119.9049ms 200 application/javascript
+INFO  2017-09-24 23:09:27,704 [78   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=pHFl_MDwwZLcdWvFBdIWQRNd1TYnlLqWz81WI3l1bNA  
+INFO  2017-09-24 23:09:27,764 [78   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.sweet-alert.js'
+INFO  2017-09-24 23:09:27,767 [70   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/admin.js  
+INFO  2017-09-24 23:09:27,790 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 267.2883ms 200 application/javascript
+INFO  2017-09-24 23:09:27,816 [69   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.toastr.js'
+INFO  2017-09-24 23:09:27,830 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 348.3122ms 200 application/javascript
+INFO  2017-09-24 23:09:27,874 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/js/main.js?v=J1Y5oH_ZzbVItxB9qVXbjjlMVO5hnLTSGarx1ef8pyA  
+INFO  2017-09-24 23:09:27,899 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 196.311ms 200 application/javascript
+INFO  2017-09-24 23:09:27,928 [70   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/admin.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\js\admin.js'
+INFO  2017-09-24 23:09:27,958 [68   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 297.4101ms 200 application/javascript
+INFO  2017-09-24 23:09:27,961 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636418910454765372  
+INFO  2017-09-24 23:09:27,969 [39   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/main.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\js\main.js'
+INFO  2017-09-24 23:09:27,974 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636418910454765372  
+INFO  2017-09-24 23:09:28,017 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/_Layout.js?v=jOYc7_5N1zFKt3qTihQ-9Kc0wjSMXkAeHUXNyvn8sYo  
+INFO  2017-09-24 23:09:28,024 [69   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 275.2303ms 200 application/javascript
+INFO  2017-09-24 23:09:28,097 [70   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 160.8141ms 200 application/javascript
+INFO  2017-09-24 23:09:28,120 [67   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:09:28,123 [43   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:09:28,128 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/_Layout.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\Shared\_Layout.js'
+INFO  2017-09-24 23:09:28,131 [68   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/PhoneBook/Index.js?v=D1D00YZfzLeTwffiFOmx42t8fNeZ3Kg-URAg3FgaXoo  
+INFO  2017-09-24 23:09:28,226 [70   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 253.8184ms 200 application/javascript
+INFO  2017-09-24 23:09:28,274 [67   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2017-09-24 23:09:28,277 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2017-09-24 23:09:28,326 [68   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/PhoneBook/Index.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\PhoneBook\Index.js'
+INFO  2017-09-24 23:09:28,329 [43   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-09-24 23:09:28,378 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 198.2463ms
+INFO  2017-09-24 23:09:28,402 [68   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 339.7443ms 200 application/javascript
+INFO  2017-09-24 23:09:28,448 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 507.7467ms 200 text/plain; charset=utf-8
+INFO  2017-09-24 23:09:28,475 [67   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2017-09-24 23:09:28,483 [67   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 345.6404ms
+INFO  2017-09-24 23:09:28,489 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 557.2956ms 200 application/x-javascript; charset=utf-8
+INFO  2017-09-24 23:09:30,065 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/PhoneBook/EditPersonModal?personId=3 application/html 0
+INFO  2017-09-24 23:09:30,077 [43   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:09:30,083 [43   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:09:30,117 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) with arguments (3) - ModelState is Valid
+INFO  2017-09-24 23:09:30,260 [67   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/PhoneBook/_EditPersonModal.cshtml.
+WARN  2017-09-24 23:09:30,262 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'EditPerson' in localization source 'PhonebookCore2'!
+INFO  2017-09-24 23:09:30,272 [67   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) in 188.9277ms
+INFO  2017-09-24 23:09:30,278 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 212.8693ms 200 text/html; charset=utf-8
+INFO  2017-09-24 23:09:30,288 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/PhoneBook/_PersonEditModal.js?v=St_DTOj36Kt_PfEGmrbZ5MjK_pyQTCgaJj1VHLvoRCs&_=1506283765979  
+INFO  2017-09-24 23:09:30,294 [40   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/PhoneBook/_PersonEditModal.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\PhoneBook\_PersonEditModal.js'
+INFO  2017-09-24 23:09:30,304 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12.4788ms 200 application/javascript
+INFO  2017-09-24 23:09:48,296 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:62114/PhoneBook/EditPersonModal?personId=3 application/html 0
+INFO  2017-09-24 23:09:48,306 [43   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2017-09-24 23:09:48,312 [43   ] uthorization.DefaultAuthorizationService - Authorization was successful for user: admin.
+INFO  2017-09-24 23:09:48,349 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) with arguments (3) - ModelState is Valid
+INFO  2017-09-24 23:09:48,503 [67   ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/PhoneBook/_EditPersonModal.cshtml.
+WARN  2017-09-24 23:09:48,505 [67   ] naries.DictionaryBasedLocalizationSource - Can not find 'EditPerson' in localization source 'PhonebookCore2'!
+INFO  2017-09-24 23:09:48,516 [67   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Don.PhonebookCore2.Web.Controllers.PhoneBookController.EditPersonModal (Don.PhonebookCore2.Web.Mvc) in 204.3882ms
+INFO  2017-09-24 23:09:48,523 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 225.883ms 200 text/html; charset=utf-8
+INFO  2017-09-24 23:09:48,530 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/PhoneBook/_PersonEditModal.js?v=St_DTOj36Kt_PfEGmrbZ5MjK_pyQTCgaJj1VHLvoRCs&_=1506283765980  
+INFO  2017-09-24 23:09:48,535 [43   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/PhoneBook/_PersonEditModal.js'. Physical path: 'E:\WorkspaceCsharp\Don.PhonebookCore2\src\Don.PhonebookCore2.Web.Mvc\wwwroot\view-resources\Views\PhoneBook\_PersonEditModal.js'
+INFO  2017-09-24 23:09:48,541 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.1721ms 200 application/javascript
