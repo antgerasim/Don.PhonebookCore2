@@ -151,7 +151,7 @@
         var id = $listItem.data('person-id');
 
 
-        _editPersonModal.open({ id: id });
+        //_editPersonModal.open({ id: id });
     });
 
 
