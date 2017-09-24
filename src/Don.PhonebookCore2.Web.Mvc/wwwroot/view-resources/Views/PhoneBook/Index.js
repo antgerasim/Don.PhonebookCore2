@@ -28,7 +28,9 @@
         .click(function(e) {
             e.preventDefault();
 
-            var $listItem = $(this).closest('.list-group-item'); //closest - travels up the DOM tree and returns the first ancestor that matches the passed expression.
+            var $listItem =
+                $(this).closest(
+                    '.list-group-item'); //closest - travels up the DOM tree and returns the first ancestor that matches the passed expression.
             var personId = $listItem.attr('data-person-id');
 
 /*        abp.localization
@@ -84,7 +86,6 @@
             });
     }
 
-
     //Edit person button
     $('#AllPeopleList button.edit-person')
         .click(function(e) {
@@ -94,7 +95,6 @@
             $listItem.toggleClass('person-editing').siblings().removeClass('person-editing');
             // $listItem.find('div').removeClass('table-phones-hidden').addClass('table-phones-shown');
 
-
         });
 
     //Save phone button
@@ -103,19 +103,49 @@
             e.preventDefault();
 
             var $phoneEditorRow = $(this).closest('tr');
-            $.ajax({
+            var personId = parseInt($phoneEditorRow.closest('.list-group-item').attr('data-person-id'), 10);
+            var type = parseInt($phoneEditorRow.find('select[name=Type]').val(), 10);
+            var number = $phoneEditorRow.find('input[name=Number]').val();
+
+            abp.ajax({
                     url: abp.appPath + 'PhoneBook/AddPhone',
-                    dataType: 'html',
-                    data: JSON.stringify({
-                        personId: $phoneEditorRow.closest('.list-group-item').attr('data-person-id'),
-                        Type: $phoneEditorRow.find('select[name=Type]').val(),
-                        Number: $phoneEditorRow.find('input[name=Number]').val()
-                    })
+                    type: 'POST',
+                    dataType: 'html', //type of data expecting back from server 
+                    contentType: 'application/x-www-form-urlencoded',//since request to controller (not web proxy service)
+                    //contentType: 'application/json', 
+/*                    data: JSON.stringify({
+                        personId: personId,
+                        Type: type,
+                        Number: number
+                    })*/
+                    data: {
+                        personId: personId,
+                        Type: type,
+                        Number: number
+                    }
                 })
                 .done(function(result) {
                     $(result).insertBefore($phoneEditorRow);
                 });
         });
+
+    //Delete phone button
+    $('#AllPeopleList').on('click', '.button-delete-phone', function(e) {
+        e.preventDefault();
+
+        var $phoneRow = $(this).closest('tr');
+        var phoneId = $phoneRow.attr('data-phone-id');
+
+        personService.deletePhone({
+                id: phoneId
+            })
+            .done(function() {
+                abp.notify.success(abp.localization.localize('SuccessfullyDeleted', 'PhonebookCore2'));
+                $phoneRow.remove();
+            });
+    });
+
+
 
 /*    $('.edit-role')
         .click(function(e) {
@@ -132,7 +162,6 @@
                 error: function(e) {}
             });
         });*/
-
 
     /*    function deleteUser(userId, userName) {
         abp.message.confirm(

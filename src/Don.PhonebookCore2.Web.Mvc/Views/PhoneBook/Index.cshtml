@@ -26,110 +26,117 @@
             @*        <button id="CreateNewPersonButton" class="btn btn-primary blue"><i class="fa fa-plus"></i> @L("CreateNewPerson")</button>*@
             @if (IsGranted(PermissionNames.Pages_Tenant_PhoneBook_CreatePerson))
             {
-                <button id="CreateNewPersonButton" class="btn btn-primary blue" data-toggle="modal" data-target="#PersonCreateModal">
+                <button id="CreateNewPersonButton" class="btn btn-primary blue m-t-25" data-toggle="modal" data-target="#PersonCreateModal">
                     <i class="fa fa-plus"></i> @L("CreateNewPerson")
                 </button>
             }
         </div>
-        <div class="panel">
-            <div class="panel-heading">
-                <div class="panel-title">
-                    <h1>
-                        <span>@L("PhoneBook")</span>
-                    </h1>
-                </div>
+        <div class="block-header">
+            <h1>
+                <span>@L("PhoneBook")</span>
+            </h1>
+        </div>
+@*        <div class="panel">*@
+           @* <div class="panel-heading">*@
 
-            </div>
+         @*   </div>*@
 
-            <div class="panel-body">
+            @*       <div class="panel-body">*@
+            <div class="card">
                 <div class="list-group" id="AllPeopleList">
-                    <h3>All People (@Model.Items.Count)</h3>
+                    <div class="header">
+                        <h3>All People (@Model.Items.Count)</h3>
+                    </div>
 
                     <div class="">
-                        <div class="">
-
+                        <div class="body">
                             <form action="@Url.Action("Index")" method="get">
                                 <div class="input-group">
-                                    <input id="FilterPeopleText" name="Filter" value="@Model.Filter" class="form-control" placeholder="@L("SearchWithThreeDot")" type="text">
+                                    <input id="FilterPeopleText" name="Filter" value="@Model.Filter" class="form-control"  style="width: 99%" placeholder="@L("SearchWithThreeDot")" type="text">
                                     <span class="input-group-btn">
-                                        <button id="FilterPeopleButton" class="btn btn-default " type="submit">
-                                            <i class="search-icon material-icons">search</i>
+                                        <button id="FilterPeopleButton" class="btn " type="submit">
+                                            <i class="material-icons">search</i>
                                         </button>
                                     </span>
                                 </div>
                             </form>
+                            @foreach (var person in Model.Items)
+                            {
+                      @*  <div class="card">*@
+                                <a href="javascript:;" class="list-group-item" data-person-id="@person.Id">
+                                    <h4 class="list-group-item-heading">
+                                        @person.Name @person.Surname
+
+                                        @*todo add span with person-button here?*@
+                                        <span class="person-buttons">
+                                            @if (IsGranted(PermissionNames.Pages_Tenant_PhoneBook_CreatePerson))
+                                            {
+                                                <button title="@L("Delete")" class="btn bg-red btn-circle waves-effect waves-circle waves-float delete-person m-r-5 pull-right">
+                                                    <i class="material-icons">delete</i>
+                                                </button>
+                                            }
+                                        @*               <button title="@L("Edit")" class="btn bg-teal btn-circle waves-effect waves-circle waves-float edit-person m-r-5 pull-right">
+                        <i class="material-icons">create</i>
+                    </button>*@
+
+                                <button title="@L("Edit")" class="btn bg-teal btn-circle waves-effect waves-circle waves-float edit-person m-r-5 pull-right collapsed" type="button"
+                                        data-toggle="collapse" data-target="@string.Format("#collapseTable{0}", person.Id)">
+                                                <i class="material-icons">create</i>
+                                            </button>
+                                        </span>
+                                    </h4>
+                                    <p class="list-group-item-text">
+                                        @person.EmailAddress
+                                    </p>
+                                    @*add collapsible table here*@
+                                    @*      <div id="collapseTable" class="table-phones-hidden">*@
+                                    <div id="@string.Format("collapseTable{0}", person.Id)" class="collapse">
+                                        <table class="table table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th style="width: 10%"></th>
+                                                <th style="width: 15%">@L("Type")</th>
+                                                <th style="width: 75%">@L("PhoneNumber")</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            @foreach (var phone in person.Phones)
+                                            {
+                                                @Html.Partial("_PhoneRowInPersonList", new PhoneRowInPersonListViewModel(phone))
+                                            }
+                                            <tr>
+                                                <td>
+                                                    <button class="btn btn-sm bg-teal waves-effect waves-circle waves-float button-save-phone">
+                                                        <i class="material-icons">save</i>
+                                                    </button>
+                                                </td>
+                                                <td>
+                                                    <select name="Type">
+                                                        <option value="0">@L("PhoneType_Mobile")</option>
+                                                        <option value="1">@L("PhoneType_Home")</option>
+                                                        <option value="2">@L("PhoneType_Business")</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="Number" />
+                                                </td>
+                                            </tr>
+                                            </tbody>
+
+                                        </table>
+
+                                    </div>
+                                </a>
+                    @*    </div>*@
+
+                            }
+
                         </div>
                     </div>
-                    @foreach (var person in Model.Items)
-                    {
-                        <a href="javascript:;" class="list-group-item" data-person-id="@person.Id">
-                            <h4 class="list-group-item-heading">
-                                @person.Name @person.Surname
 
-                                @*todo add span with person-button here?*@
-                                <span class="person-buttons">
-                                    @if (IsGranted(PermissionNames.Pages_Tenant_PhoneBook_CreatePerson))
-                                    {
-                                        <button title="@L("Delete")" class="btn bg-red btn-circle waves-effect waves-circle waves-float delete-person m-r-5 pull-right">
-                                            <i class="material-icons">delete</i>
-                                        </button>
-                                    }
-                     @*               <button title="@L("Edit")" class="btn bg-teal btn-circle waves-effect waves-circle waves-float edit-person m-r-5 pull-right">
-                                        <i class="material-icons">create</i>
-                                    </button>*@
-                        
-                                    <button title="@L("Edit")" class="btn bg-teal btn-circle waves-effect waves-circle waves-float edit-person m-r-5 pull-right collapsed" type="button"
-                                                       data-toggle="collapse" data-target="@string.Format("#collapseTable{0}", person.Id)">
-                                        <i class="material-icons">create</i>
-                                    </button>
-                                </span>
-                            </h4>
-                            <p class="list-group-item-text">
-                                @person.EmailAddress
-                            </p>
-                            @*add collapsible table here*@
-                      @*      <div id="collapseTable" class="table-phones-hidden">*@
-                            <div id="@string.Format("collapseTable{0}", person.Id)"   class="collapse">
-                                <table class="table table-hover">
-                                    <thead>
-                                    <tr>
-                                        <th style="width: 10%"></th>
-                                        <th style="width: 15%">@L("Type")</th>
-                                        <th style="width: 75%">@L("PhoneNumber")</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    @foreach (var phone in person.Phones)
-                                    {
-                                        @Html.Partial("_PhoneRowInPersonList", new PhoneRowInPersonListViewModel(phone))
-                                    }
-                                    <tr>
-                                        <td>
-                                            <button class="btn btn-sm bg-teal waves-effect waves-circle waves-float button-save-phone">
-                                                <i class="material-icons">save</i>
-                                            </button>
-                                        </td>
-                                        <td>
-                                            <select name="Type">
-                                                <option value="0">@L("PhoneType_Mobile")</option>
-                                                <option value="1">@L("PhoneType_Home")</option>
-                                                <option value="2">@L("PhoneType_Business")</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <input type="text" name="number"/>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-
-                                </table>
-
-                            </div>
-                        </a>
-                    }
                 </div>
             </div>
-        </div>
+ @*       </div>*@
     </div>
 
 </div>
@@ -179,25 +186,3 @@
 </div>
 
 
-@*
-<div class="col-md-6 col-md-offset-3">
-    <div class="input-group">
-        <div class="input-group-btn search-panel" data-search="students">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                <span class="search_by">Filter by</span> <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-                <li><a data-search="students">students</a></li>
-                <li><a data-search="teachers">teachers</a></li>
-                <li><a data-search="rooms">rooms</a></li>
-                <li class="divider"></li>
-                <li><a data-search="all">all</a></li>
-            </ul>
-        </div>   
-        <input type="text" class="form-control" name="x" placeholder="Search term...">
-        <span class="input-group-btn">
-            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-        </span>
-    </div> 
-</div>
-*@
