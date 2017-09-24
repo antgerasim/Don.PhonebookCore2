@@ -36,34 +36,35 @@
                 <span>@L("PhoneBook")</span>
             </h1>
         </div>
-@*        <div class="panel">*@
-           @* <div class="panel-heading">*@
+        @*        <div class="panel">*@
+        @* <div class="panel-heading">*@
 
-         @*   </div>*@
+        @*   </div>*@
 
-            @*       <div class="panel-body">*@
-            <div class="card">
-                <div class="list-group" id="AllPeopleList">
-                    <div class="header">
-                        <h3>All People (@Model.Items.Count)</h3>
-                    </div>
+        @*       <div class="panel-body">*@
+        <div class="card">
+            <div class="list-group" id="AllPeopleList">
+                <div class="header">
+                    <h3>All People (@Model.Items.Count)</h3>
+                </div>
 
-                    <div class="">
-                        <div class="body">
-                            <form action="@Url.Action("Index")" method="get">
-                                <div class="input-group">
-                                    <input id="FilterPeopleText" name="Filter" value="@Model.Filter" class="form-control"  style="width: 99%" placeholder="@L("SearchWithThreeDot")" type="text">
-                                    <span class="input-group-btn">
-                                        <button id="FilterPeopleButton" class="btn " type="submit">
-                                            <i class="material-icons">search</i>
-                                        </button>
-                                    </span>
-                                </div>
-                            </form>
+                <div class="">
+                    <div class="body">
+                        <form action="@Url.Action("Index")" method="get">
+                            <div class="input-group">
+                                <input id="FilterPeopleText" name="Filter" value="@Model.Filter" class="form-control" style="width: 99%" placeholder="@L("SearchWithThreeDot")" type="text">
+                                <span class="input-group-btn">
+                                    <button id="FilterPeopleButton" class="btn btn-default waves-effect waves-circle waves-float" type="submit">
+                                        <i class="material-icons">search</i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                        
+                        <ul class="list-group" id="">
                             @foreach (var person in Model.Items)
                             {
-                      @*  <div class="card">*@
-                                <a href="javascript:;" class="list-group-item" data-person-id="@person.Id">
+                                <li class="list-group-item" data-person-id="@person.Id">
                                     <h4 class="list-group-item-heading">
                                         @person.Name @person.Surname
 
@@ -71,16 +72,12 @@
                                         <span class="person-buttons">
                                             @if (IsGranted(PermissionNames.Pages_Tenant_PhoneBook_CreatePerson))
                                             {
-                                                <button title="@L("Delete")" class="btn bg-red btn-circle waves-effect waves-circle waves-float delete-person m-r-5 pull-right">
+                                                <button title="@L("Delete")" class="btn bg-red btn-circle waves-effect waves-circle waves-float delete-person pull-right">
                                                     <i class="material-icons">delete</i>
                                                 </button>
                                             }
-                                        @*               <button title="@L("Edit")" class="btn bg-teal btn-circle waves-effect waves-circle waves-float edit-person m-r-5 pull-right">
-                        <i class="material-icons">create</i>
-                    </button>*@
-
-                                <button title="@L("Edit")" class="btn bg-teal btn-circle waves-effect waves-circle waves-float edit-person m-r-5 pull-right collapsed" type="button"
-                                        data-toggle="collapse" data-target="@string.Format("#collapseTable{0}", person.Id)">
+                                            <button title="@L("Edit")" class="btn bg-teal btn-circle waves-effect waves-circle waves-float edit-person m-r-5 pull-right collapsed" type="button"
+                                                    data-toggle="collapse" data-target="@string.Format("#collapseTable{0}", person.Id)">
                                                 <i class="material-icons">create</i>
                                             </button>
                                         </span>
@@ -88,55 +85,54 @@
                                     <p class="list-group-item-text">
                                         @person.EmailAddress
                                     </p>
-                                    @*add collapsible table here*@
-                                    @*      <div id="collapseTable" class="table-phones-hidden">*@
                                     <div id="@string.Format("collapseTable{0}", person.Id)" class="collapse">
                                         <table class="table table-hover">
                                             <thead>
-                                            <tr>
-                                                <th style="width: 10%"></th>
-                                                <th style="width: 15%">@L("Type")</th>
-                                                <th style="width: 75%">@L("PhoneNumber")</th>
-                                            </tr>
+                                                <tr>
+                                                    <th style="width: 10%"></th>
+                                                    <th style="width: 15%">@L("Type")</th>
+                                                    <th style="width: 75%">@L("PhoneNumber")</th>
+                                                </tr>
                                             </thead>
                                             <tbody>
-                                            @foreach (var phone in person.Phones)
-                                            {
-                                                @Html.Partial("_PhoneRowInPersonList", new PhoneRowInPersonListViewModel(phone))
-                                            }
-                                            <tr>
-                                                <td>
-                                                    <button class="btn btn-sm bg-teal waves-effect waves-circle waves-float button-save-phone">
-                                                        <i class="material-icons">save</i>
-                                                    </button>
-                                                </td>
-                                                <td>
-                                                    <select name="Type">
-                                                        <option value="0">@L("PhoneType_Mobile")</option>
-                                                        <option value="1">@L("PhoneType_Home")</option>
-                                                        <option value="2">@L("PhoneType_Business")</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name="Number" />
-                                                </td>
-                                            </tr>
+                                                @foreach (var phone in person.Phones)
+                                                {
+                                                    @Html.Partial("_PhoneRowInPersonList", new PhoneRowInPersonListViewModel(phone))
+                                                }
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn btn-sm bg-teal waves-effect waves-circle waves-float button-save-phone">
+                                                            <i class="material-icons">save</i>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <select name="Type">
+                                                            <option value="0">@L("PhoneType_Mobile")</option>
+                                                            <option value="1">@L("PhoneType_Home")</option>
+                                                            <option value="2">@L("PhoneType_Business")</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" name="Number" />
+                                                    </td>
+                                                </tr>
                                             </tbody>
 
                                         </table>
 
                                     </div>
-                                </a>
-                    @*    </div>*@
-
+                                </li>
                             }
+                        </ul>
 
-                        </div>
+   
+
                     </div>
-
                 </div>
+
             </div>
- @*       </div>*@
+        </div>
+        @*       </div>*@
     </div>
 
 </div>
@@ -184,5 +180,3 @@
         </div>
     </div>
 </div>
-
-

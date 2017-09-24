@@ -3,7 +3,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
-using Abp.AutoMapper;
 using Abp.Domain.Repositories;
 using Abp.Linq.Extensions;
 using Castle.Core.Internal;
@@ -15,13 +14,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Don.PhonebookCore2.Domain.Person
 {
-    [AbpAuthorize(PermissionNames.Pages_Tenant_PhoneBook)]//must be logged as tenant, not as host
+    [AbpAuthorize(PermissionNames.Pages_Tenant_PhoneBook)] //must be logged as tenant, not as host
     public class PersonAppService : PhonebookCore2AppServiceBase, IPersonAppService
     {
         private readonly IRepository<Persons.Person> _personRepository;
         private readonly IRepository<Phones.Phone, long> _phoneRepository;
 
-        public PersonAppService(IRepository<Persons.Person> personRepository, IRepository<Phones.Phone,long> phoneRepository)
+        public PersonAppService(IRepository<Persons.Person> personRepository,
+            IRepository<Phones.Phone, long> phoneRepository)
         {
             _personRepository = personRepository;
             _phoneRepository = phoneRepository;
@@ -31,7 +31,7 @@ namespace Don.PhonebookCore2.Domain.Person
         {
             var persons = _personRepository
                 .GetAll()
-                .Include(p=>p.Phones)
+                .Include(p => p.Phones)
                 .WhereIf(!input.Filter.IsNullOrEmpty(),
                     p => p.Name.Contains(input.Filter) || p.Surname.Contains(input.Filter) ||
                          p.EmailAddress.Contains(input.Filter))
@@ -75,5 +75,19 @@ namespace Don.PhonebookCore2.Domain.Person
             //weiter mit https://www.aspnetzero.com/Documents/Developing-Step-By-Step-Core/#edit-mode-for-phone-numbers
         }
 
+        public async Task<GetPersonForEditOutput> GetPersonForEdit(IEntityDto input)
+        {
+            var person = await _personRepository.GetAsync(input.Id);
+            return ObjectMapper.Map<GetPersonForEditOutput>(person);
+        }
+
+        public async Task EditPerson(EditPersonInput input)
+        {
+            var person = await _personRepository.GetAsync(input.Id);
+            person.Name = input.Name;
+            person.Surname = input.Surname;
+            person.EmailAddress = input.EmailAddress;
+            await _personRepository.UpdateAsync(person);
+        }
     }
 }

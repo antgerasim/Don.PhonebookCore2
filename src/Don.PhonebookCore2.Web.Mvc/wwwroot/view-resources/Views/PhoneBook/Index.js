@@ -145,6 +145,18 @@
             });
     });
 
+    $('#AllPeopleList button.edit-person').click(function (e) {
+        e.preventDefault();
+        var $listItem = $(this).closest('.list-group-item');
+        var id = $listItem.data('person-id');
+
+
+        _editPersonModal.open({ id: id });
+    });
+
+
+
+
 
 
 /*    $('.edit-role')

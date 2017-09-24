@@ -45,12 +45,23 @@ namespace Don.PhonebookCore2.Web.Controllers
 
         //[DisableValidation]
         [HttpPost]
-        public async Task<PartialViewResult> AddPhone([FromForm] AddPhoneInput input)//[FromBody] == contentType: 'application/json', [FromForm] ==contentType: 'application/x-www-form-urlencoded'
+        public async Task<PartialViewResult>
+            AddPhone(
+                [FromForm]
+                AddPhoneInput input) //[FromBody] == contentType: 'application/json', [FromForm] ==contentType: 'application/x-www-form-urlencoded'
         {
             PhoneInPersonDto phoneInPersonList = await _personAppService.AddPhone(input);
             var model = new PhoneRowInPersonListViewModel(phoneInPersonList);
 
             return PartialView("_PhoneRowInPersonList", model);
+        }
+
+        public async Task<PartialViewResult> EditPersonModal(int id)
+        {
+            var output = await _personAppService.GetPersonForEdit(new EntityDto {Id = id});
+            var viewModel = new EditPersonViewModel(output);
+
+            return PartialView("_EditPersonModal", viewModel);
         }
     }
 }
