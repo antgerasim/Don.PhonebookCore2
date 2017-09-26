@@ -21,23 +21,17 @@ namespace Don.PhonebookCore2.Web.Controllers
             _personAppService = personAppService;
         }
 
-/*        public IActionResult Index()
-        {
-            return View();
-        }*/
         public IActionResult Index(GetPeopleInput input)
         {
             var output = _personAppService.GetPeople(input);
             var model = new IndexViewModel(output, input.Filter);
-
             return View(model);
         }
 
         [AbpMvcAuthorize(PermissionNames.Pages_Tenant_PhoneBook_CreatePerson)]
-        public ActionResult CreatePersonModal()
+        public async Task<PartialViewResult> CreatePersonModal()
         {
-            //return await Task.Run(() => View("_CreatePersonModal"));
-            return View("_CreatePersonModal");
+            return await Task.Run(() => PartialView("_PersonCreateModal"));
         }
 
         //[DisableValidation]
@@ -52,13 +46,12 @@ namespace Don.PhonebookCore2.Web.Controllers
             return PartialView("_PhoneRowInPersonList", model);
         }
 
-        public async Task<ActionResult> EditPersonModal(int personId)
+        public async Task<PartialViewResult> EditPersonModal(int personId)
         {
             var person = await _personAppService.GetPersonForEdit(new EntityDto {Id = personId});
             var viewModel = new EditPersonModalViewModel(person);
-       
-            //return PartialView("_EditPersonModal", viewModel);//todo experimnet with PartialViews
-            return View("_EditPersonModal", viewModel);
+           
+            return PartialView("_PersonEditModal", viewModel);
         }
     }
 }

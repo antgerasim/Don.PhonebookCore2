@@ -1,0 +1,45 @@
+﻿@using Don.PhonebookCore2.Domain.Persons
+@using Don.PhonebookCore2.Web.Models.Common.Modals
+@{
+    Layout = null;
+}
+@Html.Partial("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("CreateNewPerson")))
+
+<div class="modal-body">
+    <form role="form" name="personCreateForm" novalidate class="form-validation">
+        <div class="row clearfix">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <input class="validate form-control" type="text" name="Name" required maxlength="@Person.MaxNameLength"/>
+                        <label class="form-label">@L("Name")</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <input class="validate form-control" type="text" name="Surname" required maxlength="@Person.MaxSurnameLength"/>
+                        <label class="form-label">@L("Surname")</label>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="validate form-line">
+                        <input class="form-control" type="email" name="EmailAddress" required maxlength="@Person.MaxEmailAddressLength"/>
+                        <label class="form-label">@L("EmailAddress")</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @Html.Partial("Modals/_ModalFooterWithSaveAndCancel")
+    </form>
+</div>
+
+<script src="~/view-resources/Views/PhoneBook/_PersonCreateModal.js" asp-append-version="true"></script>

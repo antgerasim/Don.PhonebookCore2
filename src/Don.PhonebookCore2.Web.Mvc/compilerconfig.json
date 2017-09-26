@@ -1,22 +1,22 @@
-﻿[
+[
   {
     "outputFile": "wwwroot/css/main.css",
-    "inputFile": "wwwroot/css/main.less"
+    "inputFile": "wwwroot/css/main.less",
+    "sourceMap": false
   },
   {
     "outputFile": "wwwroot/view-resources/Views/Account/Login.css",
-    "inputFile": "wwwroot/view-resources/Views/Account/Login.less"
+    "inputFile": "wwwroot/view-resources/Views/Account/Login.less",
+    "sourceMap": false
   },
   {
     "outputFile": "wwwroot/view-resources/Views/Account/_Layout.css",
-    "inputFile": "wwwroot/view-resources/Views/Account/_Layout.less"
+    "inputFile": "wwwroot/view-resources/Views/Account/_Layout.less",
+    "sourceMap": false
   },
   {
     "outputFile": "wwwroot/view-resources/Views/Shared/_Layout.css",
-    "inputFile": "wwwroot/view-resources/Views/Shared/_Layout.less"
-  },
-  {
-    "outputFile": "wwwroot/scss/don.css",
-    "inputFile": "wwwroot/scss/don.scss"
+    "inputFile": "wwwroot/view-resources/Views/Shared/_Layout.less",
+    "sourceMap": false
   }
 ]

@@ -1,7 +1,9 @@
-﻿
+﻿/*wwwroot don.css*/
+
+/*
 .person-editing {
     background-color: #ccffcc;
-/*    background-color: red;*/
+/*    background-color: red;!1!
 }
 
 .table-phones-hidden {
@@ -12,29 +14,29 @@
     display: table;
 }
 
-/*
-#AllPeopleList {
-.list-group-item-heading {
-span.person-buttons {
+*/
+
+
+#AllPeopleList .list-group-item-heading span.person-buttons {
     float: right;
 }
+
+#AllPeopleList .table-phones {
+    display: none; 
 }
 
-.table-phones {
-    display: none;
+#AllPeopleList .person-editing {
+    background-color: #ccffcc;
 }
 
-.person-editing {
-    /*background-color: #ccffcc;!1!
-    background-color: red;
-
-h4 {
+#AllPeopleList .person-editing h4 {
     font-weight: bold;
 }
 
-.table-phones {
+#AllPeopleList .person-editing .table-phones {
     display: table;
 }
+
+.modal-content {
+     top: 150px;
 }
-}
-*/

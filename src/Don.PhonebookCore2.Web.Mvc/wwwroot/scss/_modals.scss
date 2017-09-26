@@ -12,7 +12,7 @@
     .modal-content {
         @include border-radius(0);
         box-shadow: 0 5px 20px rgba(0,0,0,.31) !important;
-        border: none;
+        border: none;     
 
         .modal-body {
             color: #777;

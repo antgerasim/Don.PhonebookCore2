@@ -2370,7 +2370,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bold; }
+/*  font-weight: bold; */
+
+}
 
 button,
 input,
@@ -5534,7 +5536,7 @@ fieldset[disabled] .form-control {
   border-radius: 0; }
 
 .list-group .list-group-item .list-group-item-heading {
-  font-weight: bold;
+/*  font-weight: bold;*/
   font-size: 17px; }
 
 .list-group .list-group-item-success {

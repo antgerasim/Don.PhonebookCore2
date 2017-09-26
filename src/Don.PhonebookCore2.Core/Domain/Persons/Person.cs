@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 using Don.PhonebookCore2.Domain.Phones;
 
 namespace Don.PhonebookCore2.Domain.Persons
 {
     [Table("PbPersons")]
-    public class Person : FullAuditedEntity
+    public class Person : FullAuditedEntity, IMustHaveTenant
     {
         public const int MaxNameLength = 32;
         public const int MaxSurnameLength = 32;
@@ -26,5 +27,9 @@ namespace Don.PhonebookCore2.Domain.Persons
 
         public virtual ICollection<Phone> Phones { get; set; }//Person aggregating Phones 
 
+        //tenant entities should be isolated by other tenants. In this example every tenant
+        //should have its own phone book with isolated people and phone numbers.APB automatically filters data based on current Tenant
+        //while retrieving entities from the database.
+        public virtual int TenantId { get; set; }
     }
 }
